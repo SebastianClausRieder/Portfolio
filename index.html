@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Files -->
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css-files/font-righteous.css">
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css-files/global.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="css-files/header.css">
+    <link rel="stylesheet" href="css-files/social-media.css">
+    <link rel="stylesheet" href="css-files/thats-me.css">
+    <link rel="stylesheet" href="css-files/my-skills.css">
+    <link rel="stylesheet" href="css-files/portfolio.css">
+    <link rel="stylesheet" href="css-files/contact.css">
+    <link rel="stylesheet" href="css-files/footer.css">
+    <link rel="stylesheet" href="css-files/legal-notice.css">
+    <link rel="stylesheet" href="css-files/responsive-hori.css">
+    <link rel="stylesheet" href="css-files/responsive-verti.css">
+
+    <!-- JS Files -->
+    <script src="js-files/index.js"></script>
+
+    <!-- Favicon and Title -->
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+    <title>Portfolio von Sebastian Rieder</title>
+
+</head>
+<body class="d-flex-start-center-column" id="start">
+    <header class="header-main-contain d-flex-center">
+        <img src="img/background/blue-line-art-founder.jpg" class="header-left-side-bg">
+        <div class="header-right-side d-flex-start-center-column">
+            <nav id="navbar" class="navbar-contain d-flex-center">
+                <div id="navbar-my-name" class="navbar-my-name-contain d-flex-center">
+                    <span class="navbar-my-name font-righteous">Sebastian</span>
+                    <span class="navbar-my-name font-righteous">Rieder</span>
+                </div>
+                <div class="navbar-btn-contain d-flex-center">
+                    <span class="menu-button d-flex-center font-righteous" onclick="scrollToSection('about')">About me</span>
+                    <span class="menu-button d-flex-center font-righteous" onclick="scrollToSection('skills')">My Skills</span>
+                    <span class="menu-button d-flex-center font-righteous" onclick="scrollToSection('portfolio')">Portfolio</span>
+                    <span class="menu-button d-flex-center font-righteous" onclick="scrollToSection('contact')">Contact</span>
+                    <div class="back-btn d-flex-center">
+                        <img id="back-btn" src="img/icons/arrow-up.png" class="back-btn-icon" onclick="scrollToSection('start')">
+                    </div>
+                </div>
+            </nav>
+            <div class="header-about-me d-flex-start-center-column">
+                <div class="my-name-contain d-flex-center">
+                    <span class="my-name font-righteous">Sebastian</span>
+                    <span class="my-name font-righteous">Rieder</span>
+                </div>
+                <span class="header-my-profession font-righteous">Restaurateur</span>
+                <span class="header-my-training font-righteous">In training to become a full stack developer.</span>
+            </div>
+        </div>
+    </header>
+    <img src="img/background/mountain.png" class="header-bottom-line">
+    <div class="social-media-contain d-flex-start-center">
+        <div class="sm-line-contain d-flex-start-center">
+            <div class="sm-line"></div>
+        </div>
+        <span class="sm-visit font-righteous">Visit me on</span>
+        <img src="img/icons/git-hub.png" class="sm-icon" onclick="goTo('git')">
+        <img src="img/icons/facebook.png" class="sm-icon" onclick="goTo('facebook')">
+        <img src="img/icons/instagram.png" class="sm-icon" onclick="goTo('insta')">
+        <div class="sm-placeholder"></div>
+        <img src="img/icons/mail.png" class="sm-icon" onclick="mailTo()">
+        <span class="sm-visit font-righteous">Write me</span>
+    </div>
+    <div class="thats-me-main-contain d-flex-start-center" id="about-me">
+        <div class="thats-me-left d-flex-start-column">
+            <div class="thats-me-contain d-flex-start-center">
+                <span class="thats-me-title font-righteous">That's me</span>
+                <span class="d-flex-start font-righteous">
+                    My name is Sebastian Rieder, born in 1986 in Vienna.<br>
+                    37 years old and by the side of a wonderful woman for 8 years.<br>
+                    Resident in Dippoldiswalde since 2022.<br>
+                    I am a trained chef and restaurant manager.<br>
+                    Passionate cook, programmer and gamer.
+                </span>
+            </div>
+            <div class="thats-me-contain d-flex-start-center" style="justify-content: flex-end;">
+                <span class="d-flex-start font-righteous" style="text-align: end;">
+                    I completed my training as a chef in 2005<br>
+                    and in 2007 I made up for the restaurant specialist.<br>
+                    For 20 years I have been working in gastronomy<br>
+                    in a wide variety of positions.<br>
+                    At the beginning of 2023 I started my training as a full stack developer.
+                </span>
+                <img src="img/icons/path.png" class="career-img">
+            </div>
+            <div class="thats-me-contain2 d-flex-start-center">
+                <span class="d-flex-start font-righteous" style="text-align: end;">
+                    I programmed little things when I was still playing World of Warcraft. #ScriptsForAddons<br>
+                    But thanks to Dreamweaver, I was also able to create smaller websites for guilds.<br>
+                    For me, programming means freedom, because our only limit is our mind.<br>
+                    Programming is the craft of the technology of our future.<br>
+                    Be it to please our children with advanced toys, or to drive a car independently.<br>
+                    Since I started my training as a full stack developer,<br>
+                    I've always been amazed at how many details are in the simplest pages and apps.
+                </span>
+                <img src="img/icons/puzzle.png" class="career-img">
+            </div>
+        </div>
+        <div class="thats-me-right d-flex-center">
+            <img src="img/founder/founder-circle-test.png" class="thats-me-image">
+        </div>
+    </div>
+    <div class="my-skills-main-contain d-flex-center" id="my-skills">
+        <div class="my-skills-image-center d-flex-center-start-column">
+            <div class="my-skills-image-contain d-flex-start-center">
+                <img src="img/icons/html.png" class="my-skills-image">
+                <img src="img/icons/css.png" class="my-skills-image">
+                <img src="img/icons/javascript.png" class="my-skills-image">
+                <img src="img/icons/bootstrap.png" class="my-skills-image">
+                <img src="img/icons/git.png" class="my-skills-image">
+                <img src="img/icons/gimp.png" class="my-skills-image">
+                <img src="img/icons/ai.png" class="my-skills-image">
+                <img src="img/icons/logo-chatgpt-white.png" class="my-skills-image">
+            </div>
+            <span class="my-skills-image-text font-righteous" onclick="goToDA()">Here you can see which programming languages I am still learning at the Developer Academy.</span>
+        </div>
+        <div class="my-skills-text-center d-flex-center-start-column">
+            <div class="my-skills-title-contain d-flex-center">
+                <span class="my-skills-title font-righteous">My Skills</span>
+                <div class="sm-line-contain d-flex-start-center">
+                    <div class="sm-line"></div>
+                </div>
+            </div>
+            <span class="my-skills-text font-righteous">
+                I have already gained experience at the Developer Academy<br>
+                in the areas of HTML, CSS and Java Script.<br>
+                I also gain daily experience in dealing with ChatGPT.
+            </span>
+        </div>
+    </div>
+    <div class="portfolio-main-contain d-flex-start-center-column" id="portfolio">
+        <div class="portfolio-title-contain d-flex-center">            
+            <div class="portfolio-line-contain d-flex-start-center">
+                <div class="portfolio-line"></div>
+            </div>
+            <span class="portfolio-title font-righteous">Portfolio</span>
+            <div class="portfolio-line-contain d-flex-start-center">
+                <div class="portfolio-line"></div>
+            </div>
+        </div>
+        <span class="font-righteous portfolio-text">This page shows a selection of my previous projects - I would like to invite you to try them out.</span>
+        <div class="portfolio-contain d-flex-center-start-column">
+            <div class="my-portfolio d-flex-center">
+                <img src="img/background/monitor-lagerfeuer.jpg" class="portfolio-image">
+                <div class="my-portfolio-text-contain d-flex-center">
+                    <div class="my-portfolio-text-contain-center d-flex-center-start-column">
+                        <span class="my-portfolio-title font-righteous">Lagerfeuer Genüße</span>
+                        <span class="write-with font-righteous">HTML | CSS | Java Script</span>
+                        <span class="my-portfolio-text font-righteous">
+                            A page to view recipes for the campfire<br>
+                            or the next barbecue party.
+                        </span>
+                        <div class="my-portfolio-btn-contain d-flex-center">
+                            <button class="my-portfolio-btn-test font-righteous" onclick="goToSide('lagerfeuer')">Live test</button>
+                            <button class="my-portfolio-btn-github font-righteous" onclick="goToGitHub('lagerfeuer')">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-portfolio my-portfolio-responsive d-flex-center">
+                <div class="my-portfolio-text-contain d-flex-center" style="background-image: url(img/background/portfolio-bg-mirrored.png);">
+                    <div class="my-portfolio-text-contain-center d-flex-center-column" style="align-items: flex-end;">
+                        <span class="my-portfolio-title font-righteous">Lieferino</span>
+                        <span class="write-with font-righteous">HTML | CSS | Java Script</span>
+                        <span class="my-portfolio-text font-righteous">
+                            On Lieferino you can order healthy dishes<br>
+                            for the little ones as well as the big ones.
+                        </span>
+                        <div class="my-portfolio-btn-contain d-flex-center">
+                            <button class="my-portfolio-btn-test font-righteous" onclick="goToSide('lieferino')">Live test</button>
+                            <button class="my-portfolio-btn-github font-righteous" onclick="goToGitHub('lieferino')">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/background/monitor-lieferino.jpg" class="portfolio-image">
+            </div>
+            <div class="my-portfolio d-flex-center">
+                <img src="img/background/monitor-join.jpg" class="portfolio-image">
+                <div class="my-portfolio-text-contain d-flex-center">
+                    <div class="my-portfolio-text-contain-center d-flex-center-start-column">
+                        <span class="my-portfolio-title font-righteous">Join</span>
+                        <span class="write-with font-righteous">HTML | CSS | Java Script | PHP</span>
+                        <span class="my-portfolio-text font-righteous">
+                            With Join, you'll never forget to finish a project on<br>
+                            time again, thanks to reminders on your board.
+                        </span>
+                        <div class="my-portfolio-btn-contain d-flex-center">
+                            <button class="my-portfolio-btn-test font-righteous" onclick="goToSide('join')">Live test</button>
+                            <button class="my-portfolio-btn-github font-righteous" onclick="goToGitHub('join')">GitHub</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-main-contain d-flex-start-center-column" id="contact">
+        <div class="contact-title-contain d-flex-start-center">
+            <div class="sm-line-contain d-flex-start-center">
+                <div class="sm-line"></div>
+            </div>
+            <span class="contact-title font-righteous">Contact</span>
+        </div>
+        <div class="contact-contain d-flex-center">
+            <div class="contact-left d-flex-center-start-column">
+                <span class="contact-text font-righteous">Is there a problem we can solve together?</span>
+                <span class="font-righteous contact-text2">
+                    Contact me using this form. I would be happy to hear from you<br>
+                    and learn more about your ideas in order to actively support them with my skills.
+                </span>
+                <span class="font-righteous">Are you looking for a Full Stack Developer? Contact Me!</span>
+            </div>
+            <form class="contact-right d-flex-center-column" action="https://sebastian-rieder.developerakademie.net/Portfolio/send_mail.php" method="post">>
+                <div class="contact-input-contain d-flex-center">
+                    <input name="name" type="text" class="contact-input-field font-righteous" placeholder="Your name...">
+                </div>
+                <div class="contact-input-contain d-flex-center">
+                    <input name="mail" type="text" class="contact-input-field font-righteous" placeholder="Your E-Mail...">
+                </div>
+                <div class="contact-input-contain-textarea d-flex-center">
+                    <textarea name="message" cols="30" rows="10" class="contact-input-field-message font-righteous" placeholder="Message to me..."></textarea>
+                </div>
+                <button class="contact-send-btn font-righteous" type="submit" onclick="thx()">Send message</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer-main-contain d-flex-center">
+        <div class="footer-contain d-flex-center-start-column">
+            <div class="my-name-contain d-flex-start-center footer-my-name-contain" style="cursor: pointer;" onclick="scrollToSection('start')">
+                <span class="my-name footer-my-name font-righteous">Sebastian</span>
+                <span class="my-name footer-my-name font-righteous">Rieder</span>
+            </div>
+            <span class="legal-notice font-righteous" onclick="openLegal()">Legal notice</span>
+        </div>
+        <div class="footer-contain d-flex-center-column">
+            <span class="copyright font-righteous">&#9400; Sebastian Rieder 2023</span>
+        </div>
+        <div class="footer-contain d-flex-center-column">
+            <div class="footer-sm d-flex-center">                        
+                <img src="img/icons/git-hub.png" class="sm-icon" onclick="goTo('git')">
+                <img src="img/icons/facebook.png" class="sm-icon" onclick="goTo('facebook')">
+                <img src="img/icons/instagram.png" class="sm-icon" onclick="goTo('insta')">
+            </div>
+        </div>
+    </footer>
+    <div class="legal-notice-main-contain d-flex-center" id="legal">
+        <div class="legal-contain d-flex-center-column">
+            <div class="my-legal d-flex-center-column">
+                <span class="legal-title font-righteous">Legal notice</span>
+                <span class="legal-paragraph font-righteous">Angaben gemäß § 5 TMG</span>
+                <div class="address-contain d-flex-center-column">
+                    <span class="font-righteous">Sebastian Rieder</span>
+                    <span class="font-righteous">Siedlung 37</span>
+                    <span class="font-righteous">01744 Dippoldiswalde</span>
+                </div>
+                <span class="font-righteous">Phone: +49 151 / 532 50 24 4</span>
+                <span class="font-righteous">Mail: sebastian.rieder@live.com</span>
+            </div>
+            <div class="mentions d-flex-center-column">
+                <span class="mentions-text font-righteous">Artist of used icons and logos.</span>
+                <div class="font-righteous">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="font-righteous">Icons made by <a href="https://www.flaticon.com/authors/payungkead" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="font-righteous">Icons made by <a href="https://www.flaticon.com/authors/uniconlabs" title="Uniconlabs">Uniconlabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="font-righteous">Icons made by <a href="https://www.flaticon.com/authors/muhamad-ulum" title="Muhamad Ulum">Muhamad Ulum</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="font-righteous">Icons made by <a href="https://www.flaticon.com/authors/bearicons" title="bearicons">bearicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="font-righteous">Icons made by <a href="https://www.flaticon.com/authors/popcornarts" title="popcornarts">popcornarts</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="font-righteous">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div class="font-righteous">Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <a class="font-righteous" href="https://www.flaticon.com/free-icons/path" title="path icons">Path icons created by Darius Dan - Flaticon</a>
+            </div>
+        </div>
+        <div class="close-btn" onclick="closeLegal()">
+            <img src="img/icons/close.png">
+        </div>
+    </div>
+</body>
+</html>

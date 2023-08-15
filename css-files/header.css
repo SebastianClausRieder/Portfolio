@@ -1,0 +1,142 @@
+/* Header */
+
+.header-main-contain {
+    width: 100%;
+    height: 450px;
+
+    justify-content: space-between;
+
+    background-color: var(--main-background);
+}
+
+.header-left-side-bg {
+    height: 100%;
+
+    border-radius: 0 0 500px 0;
+}
+
+.header-right-side {
+    width: 55%;
+    height: 100%;
+
+    gap: 10px;
+}
+
+.navbar-contain {
+    width: 100%;
+    height: 50px;
+
+    position: absolute;
+    top: 50px; right: 0;
+    justify-content: flex-end;
+
+    z-index: 99;
+}
+
+.posi-fix {
+    position: fixed;
+    top: 0;
+}
+
+.navbar-my-name-contain {
+    width: 50%;
+    height: 100%;
+
+    display: none;
+    gap: 15px;
+    
+    background-color: var(--main-background);
+}
+
+.navbar-my-name {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--main-font-color);
+}
+
+.navbar-my-name::first-letter {
+    color: var(--first-letter);
+}
+
+.navbar-btn-contain {
+    width: 50%;
+    height: 100%;
+
+    justify-content: flex-end;
+    gap: 50px;
+    
+    background-color: var(--main-background);
+    padding-right: 100px;
+}
+
+.menu-button {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--navbar-menu);
+
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    color: var(--navbar-menu-hover);
+}
+
+.back-btn {
+    width: 32px;
+    height: 32px;
+}
+
+.back-btn-icon {
+    display: none;
+    
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.back-btn-icon:hover {
+    background-color: var(--navbar-menu-hover);
+}
+
+.header-about-me {
+    width: 100%;
+    height: fit-content;
+
+    gap: 10px;
+    margin-top: 150px;
+}
+
+.my-name-contain {
+    width: 100%;
+    height: fit-content;
+
+    gap: 15px;
+}
+
+.my-name {
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--main-font-color);
+}
+
+.my-name::first-letter {
+    color: var(--first-letter);
+}
+
+.header-my-profession {
+    font-size: 55px;
+    font-weight: 900;
+    color: var(--navbar-menu-hover);    
+}
+
+.header-my-training {
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--main-font-color);    
+}
+
+.header-bottom-line {
+    width: 100%;
+    height: 200px;
+
+    margin-top: -310px;
+}

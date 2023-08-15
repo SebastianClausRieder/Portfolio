@@ -1,0 +1,220 @@
+@media all and (min-width: 601px) and (max-width: 1000px) {
+
+    /* Header */
+
+    .header-main-contain {
+        height: 270px;
+    }
+
+    .header-right-side {
+        gap: 5px;
+    }
+
+    .navbar-contain {
+        top: 20px;
+    }
+
+    .posi-fix {
+        position: fixed;
+        top: 0;
+    }
+
+    .navbar-btn-contain {
+        padding-right: 20px;
+        gap: 24px;
+    }
+
+    .menu-button {
+        font-size: 22px;
+    }
+    
+    .header-about-me {
+        margin-top: 80px;
+    }
+
+    .my-name {
+        font-size: 45px;
+    }
+
+    .header-my-profession {
+        font-size: 40px;
+    }
+
+    .header-my-training {
+        font-size: 23px;
+    }
+
+    .header-bottom-line {
+        margin-top: -300px;
+    }
+
+    /* Social Media */
+
+    .social-media-contain {
+        height: 85px;
+        gap: 35px;
+    }
+
+    .sm-line-contain {
+        min-width: 125px;
+    }
+
+    .sm-visit {
+        min-width: 140px;
+        font-size: 25px;
+    }
+
+    .sm-icon {
+        width: 38px;
+    }
+
+    /* That's me */
+
+    .thats-me-main-contain {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .thats-me-left {
+        width: 90%;
+        gap: 25px;
+    }
+    
+    .thats-me-right {
+        width: 90%;
+    }
+
+    .thats-me-contain {
+        height: 100px;
+    }
+
+    .thats-me-title {
+        font-size: 55px;
+    }
+
+    .career-img {
+        width: 100px;
+    }
+
+    .thats-me-contain2 {
+        height: 140px;
+    }
+    .thats-me-image {
+        height: 325px;
+    }
+
+    /* My Skills */
+
+    .my-skills-image-center {
+        width: calc(90% - 420px);
+        gap: 15px;
+    }
+
+    .my-skills-image-contain {
+        gap: 25px;
+    }
+
+    .my-skills-image {
+        width: 65px;
+        border-radius: 15px;
+    }
+
+    .my-skills-text-center {
+        width: 420px;
+    }
+
+    .my-skills-title-contain {
+        gap: 35px;
+    }
+
+    .my-skills-title {
+        font-size: 55px;
+    }
+
+    /* Portfolio */
+
+    .portfolio-main-contain {
+        gap: 15px;
+    }
+
+    .portfolio-title {
+        font-size: 55px;
+    }
+
+    .portfolio-contain {
+        width: 90%;
+        gap: 150px;
+    }
+
+    .portfolio-image {
+        width: 400px;
+    }
+
+    .my-portfolio-text-contain-center {
+        width: 85%;
+        height: fit-content;
+    
+        gap: 25px;
+    }
+
+    .my-portfolio-title {
+        font-size: 35px;
+    }
+
+    .write-with {
+        font-size: 20px;
+    }
+
+    .my-portfolio-btn-test, .my-portfolio-btn-github {
+        width: 175px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    /* Contact */
+
+    .contact-main-contain, .contact-title-contain {
+        gap: 25px;
+    }
+
+    .contact-title {
+        font-size: 55px;
+    }
+
+    .contact-contain {
+        width: 95%;
+    }
+
+    .contact-text {
+        font-size: 23px;
+    }
+
+    .contact-input-contain {
+        width: 400px;
+    }
+
+    .contact-input-contain-textarea {
+        width: 400px;
+        height: 200px;
+    }
+
+    /* Footer */
+
+    .footer-my-name {
+        font-size: 35px;
+    }
+
+    .copyright {
+        font-size: 20px;
+    }
+
+    .footer-sm {
+        gap: 25px;
+    }
+
+    /* Legal notice */
+
+    .close-btn {
+        right: 155px;
+    }
+}

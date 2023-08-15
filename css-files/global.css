@@ -1,0 +1,259 @@
+/* CSS Body und Java Script */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    gap: 200px;
+    background: var(--main-background);
+}
+
+.d-show {
+    display: flex !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.rotate {
+    transform: rotate(5deg);
+}
+
+.color-black {
+    color: var(--main-color) !important;
+}
+
+.color-gray {
+    color: var(--input-font-placeholder) !important;
+}
+
+.bg-light-blue {
+    background: var(--highlighted-button) !important;
+}
+
+.bg-dark-blue {
+    background: var(--drop-area-hover) !important;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-size: 70px;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-size: 35px;
+}
+
+/* Scrollbalcken */
+/* width */
+::-webkit-scrollbar {
+    background-color: var(--scrollbar-background);
+    width: 0px;
+    height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0px 0.2px 5px 2px var(--scrollbar-hover);
+}
+
+/* Most Wanted */
+
+:root {
+    /* Object Color */
+
+    /* Color Used */
+    /* Background */
+    --scrollbar-background: #FFFFFF00;
+    --scrollbar-thumb: #0D0782B8;
+    --main-background: #131313;
+    --header-background: #0e0e0e;
+    --background-trasparent: #00000000;
+    --legal-background: #000000a5;
+
+    /* Border */
+    --header-shadow: #1b27664d;
+    --sm-line: #370c6b;
+    --border-transparent: #00000000;
+    --input-border: #c0d5a9;
+
+    /* Font */
+    --navbar-menu: #2E66A2;
+    --navbar-menu-hover: #c0d5a9;
+    --first-letter: #370c6b;
+    --main-font-color: #2E66A2;
+    --portfolio-title: #370c6b;
+    --portfolio-write: #c0d5a9;
+
+    /* Button */
+    --portfolio-btn-full: #c0d5a9;
+    --portfolio-btn-full-hover: #70b526;
+    --portfolio-btn-border: #c0d5a9;
+    --portfolio-btn-color: #c0d5a9;
+    --portfolio-btn-border-hover: #70b526;
+    --portfolio-btn-color-hover: #70b526;
+    --portfolio-btn-empty: #00000000;
+
+    /* Unused Color */
+    
+    /* Background */
+    --main-background-zero: #F6F7F800;
+    --login-box: #FFFFFF;
+    --desktop-background: #2A3647;
+    --user-background: #687095;
+    --input-background: #FFFFFF;
+    --message-field: #2A3647;
+    --criteria: #97999b;
+    --main-board-background: #F5F5F5;
+    --card-color: #FFFFFF;
+    --drop-area-hover: #29abe22b;
+    --background-hover: #29ABE2;
+    --progress-bar-background: #efefef;
+    --progress-bar-filled: #29ABE2;
+    --open-task-background: #000000a5;
+    --new-contact-field: #304869;
+    --transparent: #00000000;
+    --add-contact: #97999b;
+    --join-background: #29ABE2;
+
+    /* Border */
+    --scrollbar-hover: #1111C5;
+    --login-box-shadow: #0000000a;
+    --parting-line: #29ABE2;
+    --input-border: #D1D1D1;
+    --checkbox: #000000;
+    --user-border: #2A3647;
+    --highlighted: #29ABE2;
+    --highlighted-shadow: #29aae26b;
+    --card-border: #F0F0F0;
+    --task-add-border: #000000;
+    --file-line: #0000002b;
+    --user-input-border: #000000;
+
+    /* Font Color */
+    --main-color: #000000;
+    --input-font: #000000;
+    --input-font-placeholder: #C9C9C9;
+    --message: #FFFFFF;
+    --user-initials: #FFFFFF;
+    --dark-background-font: #FFFFFF;
+    --description-font: #C9C9C9;
+
+    /* Button Color */
+    --filled-button: #2A3647;
+    --filled-button-hover: #29ABE2;
+    --filled-button-font: #FFFFFF;
+    --unfilled-button: #F6F7F8;
+    --unfilled-button-border: #2A5A9D;
+    --unfilled-button-font: #2A5A9D;
+    --unfilled-button-border-hover: #29ABE2;
+    --unfilled-button-font-hover: #29ABE2;
+    --desktop-button-hover: #091931;
+    --highlighted-button: #29ABE2;
+
+    /* Category Color */
+    --category-blue: #030FFC;
+    --category-green: #24FC03;
+    --category-pink: #F803FC;
+    --category-red: #FC0303;
+    --category-turquoise: #03FCE3;
+    --category-yellow: #FCDB03;
+}
+
+/* Display Flex */
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.d-flex-start-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.d-flex-start-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.d-flex-start-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.d-flex-center-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.d-flex-center-start-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Font */
+
+.font-righteous {
+    font-family: 'Righteous';
+    font-size: 18px;
+    color: var(--main-font-color);
+}
+
+@media all and (min-width: 601px) and (max-width: 1000px) {
+
+    /* Global */
+
+    .font-righteous {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    
+    /* Global */
+
+    body {
+        gap: 100px;
+    }
+
+    .font-righteous {
+        font-size: 14px;
+    }
+}

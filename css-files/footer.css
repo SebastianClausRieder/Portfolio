@@ -1,0 +1,38 @@
+/* Footer */
+
+.footer-main-contain {
+    width: 100%;
+    min-height: 250px;
+
+    justify-content: space-evenly;
+
+    box-shadow: 0px -1px 10px 2px var(--input-border);
+}
+
+.footer-contain {
+    width: 27%;
+    height: 100%;
+
+    gap: 15px;
+}
+
+.legal-notice {
+    width: 100%;
+
+    text-align: start;
+    cursor: pointer;
+}
+
+.legal-notice:hover {
+    color: var(--navbar-menu-hover);
+}
+
+.copyright {
+    font-size: 25px;
+}
+
+.footer-sm {
+    width: 100%;
+
+    gap: 50px;
+}

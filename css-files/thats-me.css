@@ -1,0 +1,53 @@
+/* That's me */
+
+.thats-me-main-contain {
+    width: 100%;
+    height: fit-content;
+    padding-top: 60px;
+    margin-bottom: -120px;
+}
+
+.thats-me-left {
+    width: 56%;
+    height: fit-content;
+
+    align-items: flex-end;
+    gap: 35px;
+
+    background-image: url(../img/background/thats-me-bg.png);
+    background-position: center;
+}
+
+.thats-me-right {
+    width: 44%;
+    height: fit-content;
+}
+
+.thats-me-contain {
+    width: 90%;
+    height: fit-content;
+
+    gap: 25px;
+}
+
+.thats-me-title {
+    font-size: 80px;
+    font-weight: 900;
+    color: var(--main-font-color);
+}
+
+.career-img {
+    width: 120px;
+}
+
+.thats-me-contain2 {
+    width: 90%;
+    height: fit-content;
+
+    gap: 25px;
+    justify-content: flex-end;
+}
+
+.thats-me-image {
+    height: 475px;
+}
