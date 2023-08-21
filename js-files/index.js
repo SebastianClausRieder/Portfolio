@@ -106,6 +106,20 @@ function handleScrollAndTouch()  {
         } else {
             document.getElementById('navbar').classList.remove('posi-fix', 'height-100');
         }
+    } else if (windowWidth > 1000 && windowWidth <= 1500) {
+        if (scroll >= 30) {
+            document.getElementById('navbar').classList.add('posi-fix', 'height-100');
+        
+            if (scroll >= 400) {
+                document.getElementById('navbar-my-name').classList.add('d-show');
+                document.getElementById('back-btn').classList.add('d-show');
+            } else {
+                document.getElementById('navbar-my-name').classList.remove('d-show');
+                document.getElementById('back-btn').classList.remove('d-show');
+            }
+        } else {
+            document.getElementById('navbar').classList.remove('posi-fix', 'height-100');
+        }
     } else if (windowWidth > 600 && windowWidth <= 1000) {
         if (scroll >= 1) {
             document.getElementById('responsive-menu').classList.add('posi-fix')

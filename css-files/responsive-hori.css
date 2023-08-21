@@ -37,7 +37,7 @@
     }
 
     .navbar-my-name {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .my-name-contain {
@@ -155,6 +155,10 @@
 
     .thats-me-title {
         font-size: 55px;
+    }
+
+    .thats-me-text {
+        text-align: center !important;
     }
 
     .career-img {
