@@ -3,56 +3,103 @@
     /* Header */
 
     .header-main-contain {
-        height: 270px;
+        height: 200px;
+    }
+
+    .header-left-side-bg{
+        width: 45%;
+        height: auto;
     }
 
     .header-right-side {
         gap: 5px;
     }
 
+    .responsive-menu-strip {
+        width: fit-content;
+        display: flex;
+        padding-left: 10px;
+    }
+
     .navbar-contain {
-        top: 20px;
+        width: 100%;
+        height: fit-content;
+
+        position: absolute;
+        top: 40px; right: 0;
+
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar-my-name-contain {
+        display: flex;
+    }
+
+    .navbar-my-name {
+        font-size: 28px;
+    }
+
+    .my-name-contain {
+        display: none;
+    }
+
+    .navbar-btn-contain {
+        width: 56.5%;
+        height: fit-content;
+
+        padding-right: 0px;
+        padding-bottom: 10px;
+        
+        display: none;
+        gap: 15px;
+        flex-direction: column;
+
+        position: fixed;
+        top: 75px;
+    }
+
+    .menu-button {
+        font-size: 18px;
     }
 
     .posi-fix {
         position: fixed;
         top: 0;
     }
-
-    .navbar-btn-contain {
-        padding-right: 20px;
-        gap: 24px;
-    }
-
-    .menu-button {
-        font-size: 22px;
-    }
     
     .header-about-me {
-        margin-top: 80px;
+        margin-top: 0px;
     }
 
     .my-name {
-        font-size: 45px;
+        font-size: 25px;
     }
 
     .header-my-profession {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .header-my-training {
-        font-size: 23px;
+        font-size: 16px;
+        text-align: center;
     }
 
     .header-bottom-line {
-        margin-top: -300px;
+        height: 60px;
+        margin-top: -200px;
     }
 
     /* Social Media */
 
     .social-media-contain {
-        height: 85px;
-        gap: 35px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .sm-title-line {
+        width: 100%;
+        gap: 20px;
     }
 
     .sm-line-contain {
@@ -64,8 +111,16 @@
         font-size: 25px;
     }
 
+    .sm-icon-contain {
+        gap: 20px;
+    }
+
     .sm-icon {
         width: 38px;
+    }
+
+    .sm-placeholder {
+        display: none;
     }
 
     /* That's me */
@@ -73,19 +128,29 @@
     .thats-me-main-contain {
         flex-direction: column;
         gap: 25px;
+        padding-top: 0;
     }
 
     .thats-me-left {
-        width: 90%;
-        gap: 25px;
+        width: 100%;
+        align-items: center;
+        gap: 45px;
     }
     
     .thats-me-right {
-        width: 90%;
+        width: 100%;
     }
 
     .thats-me-contain {
-        height: 100px;
+        width: 95%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .thats-me-contain2 {
+        width: 95%;
+        flex-direction: column-reverse;
+        gap: 15px;
     }
 
     .thats-me-title {
@@ -95,22 +160,25 @@
     .career-img {
         width: 100px;
     }
-
-    .thats-me-contain2 {
-        height: 140px;
-    }
+    
     .thats-me-image {
         height: 325px;
     }
 
     /* My Skills */
 
+    .my-skills-main-contain {
+        height: fit-content;
+        flex-direction: column-reverse;
+    }
+
     .my-skills-image-center {
-        width: calc(90% - 420px);
+        width: 85%;
         gap: 15px;
     }
 
     .my-skills-image-contain {
+        justify-content: center;
         gap: 25px;
     }
 
@@ -137,8 +205,18 @@
         gap: 15px;
     }
 
+    .portfolio-line-contain {
+        width: 25%;
+        height: 100%;
+    }
+
     .portfolio-title {
         font-size: 55px;
+    }
+
+    .portfolio-text {
+        width: 85%;
+        text-align: center;
     }
 
     .portfolio-contain {
@@ -146,8 +224,21 @@
         gap: 150px;
     }
 
+    .my-portfolio {
+        flex-direction: column;
+    }
+
+    .my-portfolio-responsive {
+        flex-direction: column-reverse;
+    }
+
     .portfolio-image {
         width: 400px;
+    }
+
+    .my-portfolio-text-contain {
+        width: 100%;
+        height: 300px;
     }
 
     .my-portfolio-text-contain-center {
@@ -166,7 +257,7 @@
     }
 
     .my-portfolio-btn-test, .my-portfolio-btn-github {
-        width: 175px;
+        width: 200px;
         height: 35px;
         font-size: 20px;
     }
@@ -183,25 +274,54 @@
 
     .contact-contain {
         width: 95%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact-left {
+        width: 80%;
+        align-items: center;
     }
 
     .contact-text {
         font-size: 23px;
     }
 
+    .contact-text2 {
+        text-align: center;
+    }
+
     .contact-input-contain {
-        width: 400px;
+        width: 500px;
     }
 
     .contact-input-contain-textarea {
-        width: 400px;
-        height: 200px;
+        width: 500px;
+        height: 250px;
     }
 
     /* Footer */
 
+    .footer-main-contain {
+        flex-direction: column;
+    }
+
+    .footer-contain {
+        width: 85%;
+        height: 25%;
+        justify-content: center;
+    }
+
+    .footer-my-name-contain {
+        justify-content: center;
+    }
+
     .footer-my-name {
-        font-size: 35px;
+        font-size: 40px;
+    }
+
+    .legal-notice {
+        text-align: center;
     }
 
     .copyright {
@@ -215,6 +335,6 @@
     /* Legal notice */
 
     .close-btn {
-        right: 155px;
+        right: 115px;
     }
 }

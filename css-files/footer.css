@@ -16,6 +16,13 @@
     gap: 15px;
 }
 
+.footer-my-name-contain {
+    width: 100%;
+    height: fit-content;
+
+    gap: 15px;
+}
+
 .legal-notice {
     width: 100%;
 

@@ -22,6 +22,16 @@
     gap: 10px;
 }
 
+.responsive-menu-strip {
+    width: 100%;
+    height: fit-content;
+
+    display: none;
+    
+    background-color: var(--main-background);
+    z-index: 99;
+}
+
 .navbar-contain {
     width: 100%;
     height: 50px;
@@ -33,18 +43,13 @@
     z-index: 99;
 }
 
-.posi-fix {
-    position: fixed;
-    top: 0;
-}
-
 .navbar-my-name-contain {
     width: 50%;
     height: 100%;
 
     display: none;
     gap: 15px;
-    
+
     background-color: var(--main-background);
 }
 
@@ -56,6 +61,25 @@
 
 .navbar-my-name::first-letter {
     color: var(--first-letter);
+}
+
+.drop-down-menu {
+    width: fit-content;
+    height: fit-content;
+}
+
+.drop-menu-btn {
+    width: 75px;
+    height: 75px;
+
+    background-image: url(../img/icons/circle-big-border.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.drop-menu-btn:hover {
+    background-color: var(--navbar-menu-hover);
+    border-radius: 50%;
 }
 
 .navbar-btn-contain {
@@ -82,7 +106,7 @@
 }
 
 .back-btn {
-    width: 32px;
+    min-width: 32px;
     height: 32px;
 }
 
@@ -95,6 +119,11 @@
 
 .back-btn-icon:hover {
     background-color: var(--navbar-menu-hover);
+}
+
+.posi-fix {
+    position: fixed;
+    top: 0;
 }
 
 .header-about-me {

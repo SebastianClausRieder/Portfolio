@@ -1,16 +1,42 @@
 // Social Media and E-Mail Functions
 
+let menuOpen = false;
+
 function scrollToSection(level) {
+    let navBar = document.getElementById('responsive-navbar');
+
     if (level === 'about') {
         document.querySelector('#about-me').scrollIntoView({ behavior: 'smooth'});
+        navBar.classList.remove('d-show');
+        menuOpen = false;
     } else if (level === 'skills') {
         document.querySelector('#my-skills').scrollIntoView({ behavior: 'smooth'});
+        navBar.classList.remove('d-show');
+        menuOpen = false;
     } else if (level === 'portfolio') {
         document.querySelector('#portfolio').scrollIntoView({ behavior: 'smooth'});
+        navBar.classList.remove('d-show');
+        menuOpen = false;
     } else if (level === 'contact') {
         document.querySelector('#contact').scrollIntoView({ behavior: 'smooth'});
+        navBar.classList.remove('d-show');
+        menuOpen = false;
     } else if (level === 'start') {
         document.querySelector('#start').scrollIntoView({ behavior: 'smooth'});
+        navBar.classList.remove('d-show');
+        menuOpen = false;
+    }
+}
+
+function navMenu() {
+    let navBar = document.getElementById('responsive-navbar');
+
+    if (!menuOpen) {
+        navBar.classList.add('d-show');
+        menuOpen = true;
+    } else {
+        navBar.classList.remove('d-show');
+        menuOpen = false;
     }
 }
 
@@ -61,44 +87,47 @@ function closeLegal() {
     document.getElementById('legal').classList.remove('d-show');
 }
 
-window.addEventListener("scroll", function (event) {
+function handleScrollAndTouch()  {
     let windowWidth = this.window.innerWidth;
     let scroll = this.scrollY;
+    console.log(scroll);
+
     if (windowWidth > 1000) {
-        if (scroll > 50) {
-            document.getElementById('navbar').classList.add('posi-fix');            
-        } else {
-            document.getElementById('navbar').classList.remove('posi-fix');
-        }
+        if (scroll >= 30) {
+            document.getElementById('navbar').classList.add('posi-fix', 'height-100');
         
-        if (scroll > 400) {
-            document.getElementById('navbar-my-name').classList.add('d-show');
-            document.getElementById('back-btn').classList.add('d-show');
+            if (scroll >= 400) {
+                document.getElementById('navbar-my-name').classList.add('d-show');
+                document.getElementById('back-btn').classList.add('d-show');
+            } else {
+                document.getElementById('navbar-my-name').classList.remove('d-show');
+                document.getElementById('back-btn').classList.remove('d-show');
+            }
         } else {
-            document.getElementById('navbar-my-name').classList.remove('d-show');
-            document.getElementById('back-btn').classList.remove('d-show');
+            document.getElementById('navbar').classList.remove('posi-fix', 'height-100');
         }
     } else if (windowWidth > 600 && windowWidth <= 1000) {
-        if (scroll > 20) {
-            document.getElementById('navbar').classList.add('posi-fix');            
+        if (scroll >= 1) {
+            document.getElementById('responsive-menu').classList.add('posi-fix')
+            document.getElementById('responsive-back-btn').classList.add('d-show');
+            document.getElementById('responsive-navbar-my-name').classList.add('d-show');          
         } else {
-            document.getElementById('navbar').classList.remove('posi-fix');
-        }
-
-        if (scroll > 260) {
-            document.getElementById('navbar-my-name').classList.add('d-show');
-            document.getElementById('back-btn').classList.add('d-show');
-        } else {
-            document.getElementById('navbar-my-name').classList.remove('d-show');
-            document.getElementById('back-btn').classList.remove('d-show');
+            document.getElementById('responsive-menu').classList.remove('posi-fix')
+            document.getElementById('responsive-back-btn').classList.remove('d-show');
+            document.getElementById('responsive-navbar-my-name').classList.remove('d-show');
         }
     } else {
-        if (scroll > 375) {
-            document.getElementById('navbar').classList.add('posi-fix');
+        if (scroll >= 200) {
+            document.getElementById('responsive-menu').classList.add('posi-fix')
             document.getElementById('back-btn').classList.add('d-show');
+            document.getElementById('navbar-my-name').classList.add('d-show');
         } else {
-            document.getElementById('navbar').classList.remove('posi-fix');
+            document.getElementById('responsive-menu').classList.remove('posi-fix')
             document.getElementById('back-btn').classList.remove('d-show');
+            document.getElementById('navbar-my-name').classList.remove('d-show');
         }
     }
-});
+}
+
+window.addEventListener("scroll", handleScrollAndTouch);
+window.addEventListener("touchmove", handleScrollAndTouch);

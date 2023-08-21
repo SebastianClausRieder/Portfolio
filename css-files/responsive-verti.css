@@ -17,49 +17,83 @@
         gap: 5px;
     }
 
-    .navbar-contain {
-        width: 100%;
-        position: absolute;
-        top: 375px; right: 0;
+    .responsive-menu-strip {
+        display: flex;
     }
 
-    .posi-fix {
-        position: fixed;
-        top: 0;
+    .navbar-contain {
+        width: 100%;
+        height: fit-content;
+
+        position: absolute;
+        top: 40px; right: 0;
+
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar-my-name-contain {
+        display: flex;
+    }
+
+    .my-name-contain {
+        display: none;
     }
 
     .navbar-btn-contain {
         width: 100%;
-        padding-right: 30px;
-        gap: 30px;
+        height: fit-content;
+
+        padding-right: 0px;
+        
+        display: none;
+        gap: 15px;
+        flex-direction: column;
     }
 
     .menu-button {
         font-size: 22px;
     }
 
+    .posi-fix {
+        position: fixed;
+        top: 0px;
+    }
+
+    .header-about-me {
+        margin-top: 15px;
+    }
+
     .my-name {
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .header-my-profession {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .header-my-training {
         font-size: 23px;
+        text-align: center;
     }
 
     .header-bottom-line {
-        margin-top: -150px;
+        height: 60px;
+        margin-top: -100px;
     }
 
     /* Social Media */
 
     .social-media-contain {
-        height: 85px;
+        flex-wrap: wrap;
         gap: 20px;
-        margin-top: -125px;
+        margin-top: -100px;
+        margin-bottom: -20px;
+    }
+
+    .sm-title-line {
+        width: 100%;
+        gap: 20px;
     }
 
     .sm-line-contain {
@@ -69,6 +103,10 @@
     .sm-visit {
         min-width: fit-content;
         font-size: 25px;
+    }
+
+    .sm-icon-contain {
+        gap: 20px;
     }
 
     .sm-icon {
@@ -84,12 +122,13 @@
     .thats-me-main-contain {
         flex-direction: column;
         gap: 25px;
+        padding-top: 0;
     }
 
     .thats-me-left {
         width: 100%;
         align-items: center;
-        gap: 25px;
+        gap: 45px;
     }
     
     .thats-me-right {
@@ -98,12 +137,18 @@
 
     .thats-me-contain {
         width: 95%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .thats-me-contain2 {
+        width: 95%;
+        flex-direction: column-reverse;
         gap: 15px;
     }
 
     .thats-me-title {
         font-size: 30px;
-        transform: rotate(-45deg);
     }
 
     .career-img {
@@ -115,7 +160,7 @@
         gap: 15px;
     }
     .thats-me-image {
-        height: 325px;
+        height: 225px;
     }
 
     /* My Skills */
@@ -149,7 +194,7 @@
     }
 
     .my-skills-title {
-        font-size: 55px;
+        font-size: 45px;
     }
 
     /* Portfolio */
@@ -159,7 +204,7 @@
     }
 
     .portfolio-line-contain {
-        width: 30%;
+        width: 20%;
         height: 100%;
     }
 
@@ -168,7 +213,7 @@
     }
 
     .portfolio-text {
-        width: 80%;
+        width: 85%;
         text-align: center;
     }
 
@@ -186,11 +231,12 @@
     }
 
     .portfolio-image {
-        width: 400px;
+        width: 300px;
+        border-radius: 10px;
     }
 
     .my-portfolio-text-contain {
-        width: 75%;
+        width: 100%;
         height: 300px;
     }
 
@@ -202,7 +248,7 @@
     }
 
     .my-portfolio-title {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .write-with {
@@ -210,7 +256,7 @@
     }
 
     .my-portfolio-btn-test, .my-portfolio-btn-github {
-        width: 175px;
+        width: 140px;
         height: 35px;
         font-size: 20px;
     }
@@ -222,12 +268,13 @@
     }
 
     .contact-title {
-        font-size: 55px;
+        font-size: 45px;
     }
 
     .contact-contain {
-        flex-direction: column;
         width: 95%;
+        flex-direction: column;
+        gap: 25px;
     }
 
     .contact-left {
@@ -244,12 +291,12 @@
     }
 
     .contact-input-contain {
-        width: 400px;
+        width: 300px;
     }
 
     .contact-input-contain-textarea {
-        width: 400px;
-        height: 200px;
+        width: 300px;
+        height: 150px;
     }
 
     /* Footer */
@@ -286,7 +333,11 @@
 
     /* Legal notice */
 
+    .legal-contain {
+        width: 95%;
+    }
+
     .close-btn {
-        right: 115px;
+        right: 55px;
     }
 }

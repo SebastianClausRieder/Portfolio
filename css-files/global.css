@@ -17,6 +17,10 @@ body {
     display: none !important;
 }
 
+.height-100 {
+    height: 100px !important;
+}
+
 .rotate {
     transform: rotate(5deg);
 }
@@ -254,6 +258,6 @@ h2 {
     }
 
     .font-righteous {
-        font-size: 14px;
+        font-size: 12px;
     }
 }

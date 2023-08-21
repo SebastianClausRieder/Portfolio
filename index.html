@@ -35,6 +35,24 @@
     <header class="header-main-contain d-flex-center">
         <img src="img/background/blue-line-art-founder.jpg" class="header-left-side-bg">
         <div class="header-right-side d-flex-start-center-column">
+            <div id="responsive-menu" class="responsive-menu-strip d-flex-center-column">
+                <div id="responsive-navbar-my-name" class="navbar-my-name-contain d-flex-center">
+                    <span class="navbar-my-name font-righteous">Sebastian</span>
+                    <span class="navbar-my-name font-righteous">Rieder</span>
+                    <div class="drop-down-menu d-flex-center" onclick="navMenu()">
+                        <div class="drop-menu-btn font-righteous d-flex-center">MENU</div>
+                    </div>
+                </div>
+                <div id="responsive-navbar" class="navbar-btn-contain d-flex-center">
+                    <span class="menu-button d-flex-center font-righteous" onclick="scrollToSection('about')">About me</span>
+                    <span class="menu-button d-flex-center font-righteous" onclick="scrollToSection('skills')">My Skills</span>
+                    <span class="menu-button d-flex-center font-righteous" onclick="scrollToSection('portfolio')">Portfolio</span>
+                    <span class="menu-button d-flex-center font-righteous" onclick="scrollToSection('contact')">Contact</span>
+                    <div class="back-btn d-flex-center">
+                        <img id="responsive-back-btn" src="img/icons/arrow-up.png" class="back-btn-icon" onclick="scrollToSection('start')">
+                    </div>
+                </div>
+            </div>
             <nav id="navbar" class="navbar-contain d-flex-center">
                 <div id="navbar-my-name" class="navbar-my-name-contain d-flex-center">
                     <span class="navbar-my-name font-righteous">Sebastian</span>
@@ -55,23 +73,29 @@
                     <span class="my-name font-righteous">Sebastian</span>
                     <span class="my-name font-righteous">Rieder</span>
                 </div>
-                <span class="header-my-profession font-righteous">Restaurateur</span>
+                <span class="header-my-profession font-righteous">Gastronomer</span>
                 <span class="header-my-training font-righteous">In training to become a full stack developer.</span>
             </div>
         </div>
     </header>
     <img src="img/background/mountain.png" class="header-bottom-line">
     <div class="social-media-contain d-flex-start-center">
-        <div class="sm-line-contain d-flex-start-center">
-            <div class="sm-line"></div>
+        <div class="sm-title-line d-flex-start-center">
+            <div class="sm-line-contain d-flex-start-center">
+                <div class="sm-line"></div>
+            </div>
+            <span class="sm-visit font-righteous">Visit me on</span>
         </div>
-        <span class="sm-visit font-righteous">Visit me on</span>
-        <img src="img/icons/git-hub.png" class="sm-icon" onclick="goTo('git')">
-        <img src="img/icons/facebook.png" class="sm-icon" onclick="goTo('facebook')">
-        <img src="img/icons/instagram.png" class="sm-icon" onclick="goTo('insta')">
+        <div class="sm-icon-contain d-flex-center">
+            <img src="img/icons/git-hub.png" class="sm-icon" onclick="goTo('git')">
+            <img src="img/icons/facebook.png" class="sm-icon" onclick="goTo('facebook')">
+            <img src="img/icons/instagram.png" class="sm-icon" onclick="goTo('insta')">
+        </div>
         <div class="sm-placeholder"></div>
-        <img src="img/icons/mail.png" class="sm-icon" onclick="mailTo()">
-        <span class="sm-visit font-righteous">Write me</span>
+        <div class="sm-icon-contain d-flex-center">
+            <img src="img/icons/mail.png" class="sm-icon" onclick="mailTo()">
+            <span class="sm-visit font-righteous">Write me</span>
+        </div>
     </div>
     <div class="thats-me-main-contain d-flex-start-center" id="about-me">
         <div class="thats-me-left d-flex-start-column">
@@ -82,10 +106,10 @@
                     37 years old and by the side of a wonderful woman for 8 years.<br>
                     Resident in Dippoldiswalde since 2022.<br>
                     I am a trained chef and restaurant manager.<br>
-                    Passionate cook, programmer and gamer.
+                    Passionate chef, programmer and gamer.
                 </span>
             </div>
-            <div class="thats-me-contain d-flex-start-center" style="justify-content: flex-end;">
+            <div class="thats-me-contain2 d-flex-start-center">
                 <span class="d-flex-start font-righteous" style="text-align: end;">
                     I completed my training as a chef in 2005<br>
                     and in 2007 I made up for the restaurant specialist.<br>
@@ -221,15 +245,15 @@
                 </span>
                 <span class="font-righteous">Are you looking for a Full Stack Developer? Contact Me!</span>
             </div>
-            <form class="contact-right d-flex-center-column" action="https://sebastian-rieder.developerakademie.net/Portfolio/send_mail.php" method="post">>
+            <form class="contact-right d-flex-center-column" action="https://sebastian-rieder.developerakademie.net/Portfolio/send_mail.php" method="post">
                 <div class="contact-input-contain d-flex-center">
-                    <input name="name" type="text" class="contact-input-field font-righteous" placeholder="Your name...">
+                    <input name="name" type="text" minlength="3" required class="contact-input-field font-righteous" placeholder="Your name...">
                 </div>
                 <div class="contact-input-contain d-flex-center">
-                    <input name="mail" type="text" class="contact-input-field font-righteous" placeholder="Your E-Mail...">
+                    <input name="mail" type="email" required class="contact-input-field font-righteous" placeholder="Your E-Mail...">
                 </div>
                 <div class="contact-input-contain-textarea d-flex-center">
-                    <textarea name="message" cols="30" rows="10" class="contact-input-field-message font-righteous" placeholder="Message to me..."></textarea>
+                    <textarea name="message" required cols="30" rows="10" class="contact-input-field-message font-righteous" placeholder="Message to me..."></textarea>
                 </div>
                 <button class="contact-send-btn font-righteous" type="submit" onclick="thx()">Send message</button>
             </form>
@@ -237,7 +261,7 @@
     </div>
     <footer class="footer-main-contain d-flex-center">
         <div class="footer-contain d-flex-center-start-column">
-            <div class="my-name-contain d-flex-start-center footer-my-name-contain" style="cursor: pointer;" onclick="scrollToSection('start')">
+            <div class="footer-my-name-contain d-flex-start-center footer-my-name-contain" style="cursor: pointer;" onclick="scrollToSection('start')">
                 <span class="my-name footer-my-name font-righteous">Sebastian</span>
                 <span class="my-name footer-my-name font-righteous">Rieder</span>
             </div>
