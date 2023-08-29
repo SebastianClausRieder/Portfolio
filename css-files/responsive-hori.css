@@ -16,9 +16,7 @@
     }
 
     .responsive-menu-strip {
-        width: fit-content;
         display: flex;
-        padding-left: 10px;
     }
 
     .navbar-contain {
@@ -33,11 +31,17 @@
     }
 
     .navbar-my-name-contain {
+        width: 100%;
         display: flex;
     }
 
     .navbar-my-name {
-        font-size: 35px;
+        font-size: 30px;
+    }
+
+    .drop-menu-btn {
+        width: 65px;
+        height: 65px;
     }
 
     .my-name-contain {
@@ -54,22 +58,14 @@
         display: none;
         gap: 15px;
         flex-direction: column;
-
-        position: fixed;
-        top: 75px;
     }
 
     .menu-button {
         font-size: 18px;
     }
-
-    .posi-fix {
-        position: fixed;
-        top: 0;
-    }
     
     .header-about-me {
-        margin-top: 0px;
+        margin-top: 100px;
     }
 
     .my-name {
@@ -95,6 +91,8 @@
     .social-media-contain {
         flex-wrap: wrap;
         gap: 20px;
+        margin-top: -150px;
+        margin-bottom: -175px;
     }
 
     .sm-title-line {
@@ -128,7 +126,6 @@
     .thats-me-main-contain {
         flex-direction: column;
         gap: 25px;
-        padding-top: 0;
     }
 
     .thats-me-left {

@@ -90,54 +90,61 @@ function closeLegal() {
 function handleScrollAndTouch()  {
     let windowWidth = this.window.innerWidth;
     let scroll = this.scrollY;
-    console.log(scroll);
 
     if (windowWidth > 1000) {
-        if (scroll >= 30) {
-            document.getElementById('navbar').classList.add('posi-fix', 'height-100');
+        if (scroll >= 1) {
+            document.getElementById('navbar').classList.add('posi-fix', 'height-100', 'width-50');
+            document.getElementById('header-about-me').classList.add('margin-top');
         
             if (scroll >= 400) {
                 document.getElementById('navbar-my-name').classList.add('d-show');
                 document.getElementById('back-btn').classList.add('d-show');
+                document.getElementById('navbar-contain').classList.add('width-50');
+                document.getElementById('navbar').classList.remove('width-50');
             } else {
                 document.getElementById('navbar-my-name').classList.remove('d-show');
                 document.getElementById('back-btn').classList.remove('d-show');
+                document.getElementById('navbar-contain').classList.remove('width-50');
+                document.getElementById('navbar').classList.add('width-50');
             }
         } else {
-            document.getElementById('navbar').classList.remove('posi-fix', 'height-100');
+            document.getElementById('navbar').classList.remove('posi-fix', 'height-100', 'width-50');
+            document.getElementById('header-about-me').classList.remove('margin-top');
         }
     } else if (windowWidth > 1000 && windowWidth <= 1500) {
-        if (scroll >= 30) {
-            document.getElementById('navbar').classList.add('posi-fix', 'height-100');
+        if (scroll >= 1) {
+            document.getElementById('navbar').classList.add('posi-fix', 'height-100', 'width-50');
         
             if (scroll >= 400) {
                 document.getElementById('navbar-my-name').classList.add('d-show');
                 document.getElementById('back-btn').classList.add('d-show');
+                document.getElementById('navbar-contain').classList.add('width-50');
             } else {
                 document.getElementById('navbar-my-name').classList.remove('d-show');
                 document.getElementById('back-btn').classList.remove('d-show');
+                document.getElementById('navbar-contain').classList.remove('width-50');
             }
         } else {
-            document.getElementById('navbar').classList.remove('posi-fix', 'height-100');
+            document.getElementById('navbar').classList.remove('posi-fix', 'height-100', 'width-50');
         }
     } else if (windowWidth > 600 && windowWidth <= 1000) {
-        if (scroll >= 1) {
+        if (scroll >= 25) {
             document.getElementById('responsive-menu').classList.add('posi-fix')
             document.getElementById('responsive-back-btn').classList.add('d-show');
-            document.getElementById('responsive-navbar-my-name').classList.add('d-show');          
+            document.getElementById('responsive-navbar-my-name').classList.add('d-show');
         } else {
             document.getElementById('responsive-menu').classList.remove('posi-fix')
             document.getElementById('responsive-back-btn').classList.remove('d-show');
             document.getElementById('responsive-navbar-my-name').classList.remove('d-show');
         }
     } else {
-        if (scroll >= 200) {
+        if (scroll >= 240) {
             document.getElementById('responsive-menu').classList.add('posi-fix')
-            document.getElementById('back-btn').classList.add('d-show');
+            document.getElementById('responsive-back-btn').classList.add('d-show');
             document.getElementById('navbar-my-name').classList.add('d-show');
         } else {
             document.getElementById('responsive-menu').classList.remove('posi-fix')
-            document.getElementById('back-btn').classList.remove('d-show');
+            document.getElementById('responsive-back-btn').classList.remove('d-show');
             document.getElementById('navbar-my-name').classList.remove('d-show');
         }
     }

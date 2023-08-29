@@ -20,13 +20,15 @@
     height: 100%;
 
     gap: 10px;
+    padding-top: 50px;
 }
 
 .responsive-menu-strip {
-    width: 100%;
+    width: 55%;
     height: fit-content;
 
     display: none;
+    position: absolute;
     
     background-color: var(--main-background);
     z-index: 99;
@@ -36,15 +38,11 @@
     width: 100%;
     height: 50px;
 
-    position: absolute;
-    top: 50px; right: 0;
-    justify-content: flex-end;
-
     z-index: 99;
 }
 
 .navbar-my-name-contain {
-    width: 55.2%;
+    width: 50%;
     height: 100%;
 
     display: none;
@@ -83,7 +81,7 @@
 }
 
 .navbar-btn-contain {
-    width: 44.8%;
+    width: 100%;
     height: 100%;
 
     justify-content: flex-end;
@@ -124,7 +122,7 @@
 
 .posi-fix {
     position: fixed;
-    top: 0;
+    top: 0; right: 0;
 }
 
 .header-about-me {
@@ -132,7 +130,7 @@
     height: fit-content;
 
     gap: 10px;
-    margin-top: 150px;
+    margin-top: 75px;
 }
 
 .my-name-contain {

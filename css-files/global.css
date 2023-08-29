@@ -21,6 +21,14 @@ body {
     height: 100px !important;
 }
 
+.width-50 {
+    width: 50% !important;
+}
+
+.margin-top {
+    margin-top: 135px !important;
+}
+
 .rotate {
     transform: rotate(5deg);
 }
