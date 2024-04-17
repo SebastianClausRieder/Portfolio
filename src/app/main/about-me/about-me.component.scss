@@ -1,0 +1,164 @@
+@import './../../../mixin.scss';
+
+div {
+    width: 100%;
+    height: fit-content;
+
+    @include display();
+    position: relative;
+
+    margin-top: 150px;
+
+    .text {
+        width: 42.5%;
+        height: 775px;
+
+        @include display($ai: flex-start);
+    }
+
+    .photo {
+        width: 42.5%;
+        height: 775px;
+
+        @include display();
+    }
+
+    .shadow {
+        position: absolute;
+        right: 0; bottom: 25px;
+        z-index: -99;
+    }
+
+    .line {
+        width: 325px;
+
+        position: absolute;
+        right: 0;
+
+        border: 4px solid var(--turquoise2);
+        margin: 0;
+        z-index: -9;
+    }
+}
+
+@media all and (min-width: 1600px) and (max-width: 1799px) {
+    
+    div {
+
+        .text {
+            width: 55%;
+        }
+
+        .photo {
+            width: 40%;
+        }
+
+        .line {
+            width: 200px;
+        }
+    }
+}
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+    
+    div {
+
+        .text {
+            width: 55%;
+            height: 600px;
+        }
+
+        .photo {
+            width: 35%;
+            height: 600px;
+        }
+
+        .shadow {
+            height: 850px;
+            
+            bottom: 25px;
+        }
+
+        .line {
+            width: 180px;
+        }
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+        
+    div {
+
+        .text {
+            width: 90%;
+            height: fit-content;
+        }
+
+        .photo {
+            width: 35%;
+            height: 600px;
+
+            display: none;
+        }
+
+        .shadow {
+            height: 850px;
+            
+            bottom: 25px;
+        }
+
+        .line {
+            display: none;
+        }
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+        
+    div {
+
+        .text {
+            width: 90%;
+            height: fit-content;
+        }
+
+        .photo {
+            display: none;
+        }
+
+        .shadow {
+            height: 600px;
+            
+            bottom: 275px;
+        }
+
+        .line {
+            display: none;
+        }
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+        
+    div {
+
+        .text {
+            width: 90%;
+            height: fit-content;
+        }
+
+        .photo {
+            display: none;
+        }
+
+        .shadow {
+            height: 400px;
+            
+            bottom: 675px;
+        }
+
+        .line {
+            display: none;
+        }
+    }
+}

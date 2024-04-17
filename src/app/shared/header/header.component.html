@@ -1,0 +1,37 @@
+<nav id="navbar">
+    <div>
+        <img src="assets/img/founder/name-logo.png" class="my-logo">
+        <div class="menu">
+            <div class="btn-contain" id="btnContain">
+                <button style="visibility: hidden;" (click)="globalJSData.scrollToSection('start')" id="top">
+                    {{ globalJSData.isGerman ? german.button0 : english.button0 }}
+                </button>
+                <button (click)="globalJSData.scrollToSection('about')">
+                    {{ globalJSData.isGerman ? german.button1 : english.button1 }}
+                </button>
+                <button (click)="globalJSData.scrollToSection('skills')">
+                    {{ globalJSData.isGerman ? german.button2 : english.button2 }}
+                </button>
+                <button (click)="globalJSData.scrollToSection('portfolio')">
+                    Portfolio
+                </button>
+                <button (click)="globalJSData.scrollToSection('contact')">
+                    {{ globalJSData.isGerman ? german.button3 : english.button3 }}
+                </button>
+            </div>
+            <div class="img-contain">
+                <img src="assets/img/icons/german-flag.png"
+                (click)="globalJSData.changeLanguage(true)"
+                [ngClass]="{'active-language': globalJSData.isGerman}">
+                <img src="assets/img/icons/uk-flag.png"
+                (click)="globalJSData.changeLanguage(false)"
+                [ngClass]="{'active-language': !globalJSData.isGerman}">
+                <div class="burger-menu" (click)="toggleMenu()">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,22 @@
+<div>
+    @for (project of projectListData.projectList; track project.name; let i = $index) {
+    <div class="contain1" [ngClass]="{'flex-reverse': i % 2 === 1}">
+        <div class="img-contain" [ngClass]="{'flex-start': i % 2 === 1}">
+            <img src="{{project.image}}" alt="">
+        </div>
+        <div class="text-contain" [ngClass]="{'flex-end-ai': i % 2 === 1}">
+            <h2 class="font-poppins">{{project.name}}</h2>
+            <p class="font-poppins">{{project.writtenWith}}</p>
+            <span class="font-poppins" [ngClass]="{'text-end': i % 2 === 1}">
+                {{ globalJSData.isGerman ? project.descriptionDE : project.descriptionEN }}
+            </span>
+            <div class="contain2" [ngClass]="{'flex-end-jc': i % 2 === 1}">
+                <button class="font-poppins btn" (click)="globalJSData.goTo(project.liveLink)">Live test</button>
+                <button class="btn2" (click)="globalJSData.goTo(project.githubLink)">
+                    <span class="font-poppins text-btn2">Github</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    }
+</div>

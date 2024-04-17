@@ -1,0 +1,56 @@
+@import './../../../../mixin.scss';
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+div {
+    width: 100%;
+    height: fit-content;
+
+    @include display($jc: flex-start, $gap: 5px);
+
+    .contact-me {
+        font-weight: 900;
+    }
+}
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    div {
+        @include display($fd: column, $ai: flex-start);
+    }
+}

@@ -1,0 +1,16 @@
+<div>
+    <div class="headline">
+        <h1 class="font-poppins" [ngClass]="{'lower-font-size': globalJSData.isGerman}">
+            {{ globalJSData.isGerman ? german.text1 : english.text1 }}
+        </h1>
+        <div class="line2" [ngClass]="{'margin': globalJSData.isGerman}"></div>
+    </div>
+    <span class="font-poppins">
+        {{ globalJSData.isGerman ? german.text2 : english.text2 }}
+    </span>
+    <div class="btn-contian">
+        <button class="font-poppins" (click)="globalJSData.scrollToSection('contact')">
+            {{ globalJSData.isGerman ? german.button : english.button }}
+        </button>
+    </div>
+</div>

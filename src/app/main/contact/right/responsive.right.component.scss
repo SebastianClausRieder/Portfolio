@@ -1,0 +1,174 @@
+@import './../../../../mixin.scss';
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+    .contain1 {
+
+        .input-contain {
+
+            input {
+                font-size: 18px;
+            }
+
+            textarea {
+                font-size: 18px;
+            }
+
+            .img-contain {
+                width: 30px;
+
+                img {
+                    height: 23px;
+                }
+            }
+        }
+
+        .request-contain {
+
+            .request.area {
+                font-size: 14px;
+            }
+        }
+
+        .checkbox-contain {
+    
+            .checkbox {
+                width: 16px;
+                height: 16px;
+
+                img {
+                    width: 12px;
+                }
+            }
+
+            .pp-text, .pp-link {
+                font-size: 12px;
+            }
+        }
+
+        button {
+            width: 250px;
+            height: 62px;
+
+            font-size: 24px;
+        }
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+
+    .contain1 {
+        width: 100%;
+        margin-left: 0;
+
+        align-items: center;
+
+        .checkbox-contain {
+            width: 100%;
+        }
+
+        button {
+            margin-left: 0;
+        }
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+
+    .contain1 {
+        width: 100%;
+        margin-left: 0;
+
+        align-items: center;
+
+        .checkbox-contain {
+            width: 100%;
+
+            .pp-text, .pp-link {
+                font-size: 12px;
+            }
+        }
+
+        button {
+            width: 225px;
+            height: 60px;
+
+            font-size: 23px;
+            
+            margin-left: 0;
+        }
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+
+    .contain1 {
+        width: 100%;
+        margin-left: 0;
+
+        align-items: center;
+
+        .input-contain {
+            width: calc(100% - 25px);
+
+            padding: 10px;
+            padding-left: 10px;
+
+            input {
+                width: calc(100% - 25px);
+                height: 27px;
+
+                font-size: 16px;
+            }
+
+            textarea {
+                width: calc(100% - 25px);
+
+                font-size: 16px;
+            }
+
+            .img-contain {
+                width: 25px;
+                height: 27px;
+
+                img {
+                    height: 20px;
+                }
+            }
+        }
+
+        .request-contain {
+
+            .request-area {
+                font-size: 12px;
+            }
+        }
+
+        .checkbox-contain {
+            width: 100%;
+
+            @include display($fw: wrap, $jc: flex-start, $gap: 5px);
+
+            .checkbox {
+                width: 15px;
+                height: 15px;
+
+                .check {
+                    width: 10px;
+                }
+            }
+
+            .pp-text, .pp-link {
+                font-size: 12px;
+            }
+        }
+
+        button {
+            width: 175px;
+            height: 50px;
+
+            font-size: 19px;
+            
+            margin-left: 0;
+        }
+    }
+}

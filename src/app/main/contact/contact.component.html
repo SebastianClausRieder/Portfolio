@@ -1,0 +1,27 @@
+<div>
+    <img src="assets/img/background/bg-shadow5edge.png" class="shadow">
+    <div class="headline">
+        <div class="line4"></div>
+        <h1 class="font-poppins">{{ globalJSData.isGerman ? german.headline : english.headline }}</h1>
+    </div>
+    <div class="contain1">
+        <app-left class="app-contain"></app-left>
+        <app-right class="app-contain"></app-right>
+    </div>
+    <div class="dialog" (click)="closeDialog()" [ngClass]="{'d-none': !dialogOpen}">
+        <div class="dialog-contain1" [ngClass]="{'greenBorder': mailIsSend, 'redBorder': !mailIsSend}">
+            <h2 class="font-poppins">
+                {{ globalJSData.isGerman ? (mailIsSend ? german.headlineOk : german.headlineNotOk) : (mailIsSend ? english.headlineOk : english.headlineNotOk) }}
+            </h2>
+            <div class="text-contain">
+                <span class="font-poppins">
+                    {{ globalJSData.isGerman ? (mailIsSend ? german.z1TextOk : german.z1TextNotOk) : (mailIsSend ? english.z1TextOk : english.z1TextNotOk) }}
+                </span>
+                <span class="font-poppins">
+                    {{ globalJSData.isGerman ? (mailIsSend ? german.z2TextOk : german.z2TextNotOk) : (mailIsSend ? english.z2TextOk : english.z2TextNotOk) }}
+                </span>
+            </div>
+            <button class="font-poppins" (click)="closeDialog()">Ok</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="contain1">
+        <div class="input-contain" id="name-border" [ngClass]="{'redBorder': (contactData.name.length < 5 && contactData.name.length > 0) || (formValid == 'not ok' && contactData.name == ''),
+                                                                'greenBorder': contactData.name.length >= 5}">
+            <input [(ngModel)]="contactData.name" type="text" class="font-poppins" id="name" name="name" (input)="formValidationName()"
+                placeholder="{{ globalJSData.isGerman ? german.name : english.name }}">
+            <div class="img-contain">
+                <img [src]="(contactData.name.length < 5 && contactData.name.length > 0) || (formValid == 'not ok' && contactData.name == '') ?
+                            'assets/img/icons/attention.png' : (contactData.name.length >= 5 ? 'assets/img/icons/ok.png' : '')">
+            </div>
+        </div>
+        <div class="request-contain">
+            <span class="font-poppins request-area" id="request-name">
+                {{ globalJSData.isGerman ? ((formValid == 'not ok' && contactData.name == '') ? german.request1 : (contactData.name.length < 5 && contactData.name.length > 0 ? german.request12 : ''))
+                : ((formValid == 'not ok' && contactData.name == '') ? english.request1 : (contactData.name.length < 5 && contactData.name.length > 0 ? english.request12 : '')) }}
+            </span>
+        </div>
+    </div>
+    <div class="contain1">
+        <div class="input-contain" id="mail-border" [ngClass]="{'redBorder': (!isValidEmail(contactData.mail) && contactData.mail.length > 0) || (formValid == 'not ok' && contactData.mail == ''),
+                                                                'greenBorder': isValidEmail(contactData.mail)}">
+            <input [(ngModel)]="contactData.mail" type="email" class="font-poppins" id="mail" name="mail" (input)="formValidationMail()"
+                placeholder="{{ globalJSData.isGerman ? german.mail : english.mail }}">
+            <div class="img-contain">
+                <img [src]="(!isValidEmail(contactData.mail) && contactData.mail.length > 0) || (formValid == 'not ok' && contactData.mail == '') ?
+                            'assets/img/icons/attention.png' : (isValidEmail(contactData.mail) ? 'assets/img/icons/ok.png' : '')">    
+            </div>
+        </div>
+        <div class="request-contain">
+            <span class="font-poppins request-area" id="request-mail">
+                {{ globalJSData.isGerman ? ((!isValidEmail(contactData.mail) && contactData.mail.length > 0) || (formValid == 'not ok' && contactData.mail == '') ? german.request2 : '')
+                : ((!isValidEmail(contactData.mail) && contactData.mail.length > 0) || formValid == 'not ok' ? english.request2 : '') }}
+            </span>
+        </div>
+    </div>
+    <div class="contain1">
+        <div class="input-contain" id="message-border" [ngClass]="{'redBorder': (contactData.message.length < 10 && contactData.message.length > 0) || (formValid == 'not ok' && contactData.message == ''),
+                                                                'greenBorder': contactData.message.length >= 10}">
+            <textarea [(ngModel)]="contactData.message" class="font-poppins" id="message" name="message" (input)="formValidationMessage()"
+                placeholder="{{ globalJSData.isGerman ? german.message : english.message }}" cols="30" rows="10"></textarea>
+            <div class="img-contain">
+                <img [src]="(contactData.message.length < 10 && contactData.message.length > 0) || (formValid == 'not ok' && contactData.message == '') ?
+                            'assets/img/icons/attention.png' : (contactData.message.length >= 10 ? 'assets/img/icons/ok.png' : '')">
+            </div>
+        </div>
+        <div class="request-contain">
+            <span class="font-poppins request-area" id="request-message">
+                {{ globalJSData.isGerman ? ((formValid == 'not ok' && contactData.message == '') ? german.request3 : (contactData.message.length < 10 && contactData.message.length > 0 ? german.request32 : ''))
+                : ((formValid == 'not ok' && contactData.message == '') ? english.request3 : (contactData.message.length < 10 && contactData.message.length > 0 ? english.request32 : '')) }}
+            </span>
+        </div>
+    </div>
+    <div class="contain1">
+        <div class="checkbox-contain">
+            <div class="checkbox" id="checkbox-border" (click)="PPaccept = !PPaccept" [ngClass]="{'redBorder': formValid == 'not ok', 'greenBorder': PPaccept}">
+                <img [src]="PPaccept ? 'assets/img/icons/check-mark-green.png' : ''" class="check">
+            </div>
+            <span class="font-poppins pp-text">{{ globalJSData.isGerman ? german.text1 : english. text1 }}</span>
+            <span [routerLink]="globalJSData.isGerman ? '/datenschutzrichtlinien' : '/privacyPolicy'"
+                class="font-poppins pp-link">{{ globalJSData.isGerman ? german.link : english. link }}</span>
+            <span class="font-poppins pp-text">{{ globalJSData.isGerman ? german.text2 : english. text2 }}</span>
+        </div>
+        <div class="request-contain">
+            <span class="font-poppins request-area" id="request-pp">
+                {{ globalJSData.isGerman ? ((formValid == 'not ok' && !PPaccept) ? german.request4 : '') : ((formValid == 'not ok' && !PPaccept) ? english.request4 : '') }}
+            </span>
+        </div>
+    </div>
+    <div class="contain1">
+        <button class="font-poppins" [ngClass]="{'ready-bg': checkAllVariables()}" type="submit" value="Submit" (click)="sendMail()">
+            {{ globalJSData.isGerman ? german.button : english.button }}
+        </button>
+    </div>
+</form>

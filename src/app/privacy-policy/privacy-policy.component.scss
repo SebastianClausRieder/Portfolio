@@ -1,0 +1,74 @@
+@import './../../mixin.scss';
+
+div {
+    width: 100%;
+    height: calc(100vh - 302px);
+
+    @include display($ai: flex-start);
+    
+    scroll-behavior: smooth;
+
+    overflow: hidden;
+    overflow-y: scroll;
+
+    .contain1 {
+        width: 85%;
+        height: fit-content;
+
+        @include display($fd: column, $ai: flex-start);
+    }
+
+    .btn-contain {
+        width: 60px;
+        height: 60px;
+        
+        @include display();
+        position: fixed;
+        top: 50px; right: 50px;
+
+        cursor: pointer;
+    }
+    
+    .go-up-btn {
+        width: 50px;
+    }
+    
+    .go-up-btn-tq {
+        width: 50px;
+
+        @include display($d: none);
+        position: absolute;
+        top: 5px;
+
+        z-index: 1;
+    }
+    
+    .btn-contain:hover .go-up-btn-tq {
+        @include display($d: inline);
+    }
+}
+
+h1, h2, h3, li, p, strong, td {
+    font-family: 'Poppins';
+    color: var(--white);
+}
+
+a {
+    font-family: 'Poppins';
+    color: var(--turquoise);
+}
+
+.shadow-r {
+    width: 300px;
+    position: absolute;
+    right: 0; bottom: 25px;
+    z-index: -99;
+}
+
+.shadow-l {
+    width: 250px;
+    position: absolute;
+    left: 0; top: 0px;
+    transform: scaleY(-1);
+    z-index: -99;
+}

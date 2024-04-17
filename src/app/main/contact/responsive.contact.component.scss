@@ -1,0 +1,159 @@
+@import './../../../mixin.scss';
+
+@media all and (min-width: 1600px) and (max-width: 1799px) {
+    div {
+
+        .headline {
+            width: 95%;
+
+            h1 {
+                font-size: 85px;
+            }
+        }
+
+        .contain1 {
+            width: 95%;
+        }
+    }   
+}
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+    div {
+
+        .headline {
+            width: 90%;
+
+            .line4 {
+                margin-top: -45px;
+            }
+
+            h1 {
+                font-size: 65px;
+            }
+        }
+
+        .contain1 {
+            width: 90%;
+        }
+    }   
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+    div {
+
+        .headline {
+            width: 90%;
+
+            .line4 {
+                left: -7%;
+                margin-top: -60px;
+            }
+
+            h1 {
+                font-size: 95px;
+            }
+        }
+
+        .contain1 {
+            width: 100%;
+            height: fit-content;
+
+            @include display($fd: column, $gap: 100px);
+
+            margin-bottom: 150px;
+            
+            .app-contain {
+                width: 90%;
+            }
+        }
+    }   
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    div {
+
+        .shadow {
+            height: 650px;
+
+            top: -300px;
+        }
+
+        .headline {
+            width: 90%;
+
+            .line4 {
+                left: -7%;
+                margin-top: -50px;
+            }
+
+            h1 {
+                font-size: 75px;
+            }
+        }
+
+        .contain1 {
+            width: 100%;
+            height: fit-content;
+
+            @include display($fd: column, $gap: 100px);
+
+            margin-bottom: 150px;
+            
+            .app-contain {
+                width: 90%;
+            }
+        }
+    }   
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+    div {
+
+        .shadow {
+            height: 450px;
+
+            top: 100px;
+        }
+
+        .headline {
+            width: 90%;
+
+            .line4 {
+                left: -7%;
+                margin-top: -30px;
+            }
+
+            h1 {
+                font-size: 45px;
+            }
+        }
+
+        .contain1 {
+            width: 100%;
+            height: fit-content;
+
+            @include display($fd: column, $gap: 100px);
+
+            margin-bottom: 150px;
+            
+            .app-contain {
+                width: 90%;
+            }
+        }
+
+        .dialog {
+
+            .dialog-contain1 {
+                width: 275px;
+                height: 350px;
+
+                button {
+                    width: 150px;
+                    height: 45px;
+
+                    font-size: 24px;
+                }
+            }
+        }
+    }   
+}

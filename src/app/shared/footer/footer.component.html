@@ -1,0 +1,17 @@
+<footer>
+    <div class="main-contain">
+        <div class="logo-contain">
+            <img [routerLink]="'/'" src="assets/img/founder/name-logo.png" class="my-logo">
+            <button [routerLink]="globalJSData.isGerman ? '/datenschutzrichtlinien' : '/privacyPolicy'">
+                {{ globalJSData.isGerman ? german.button0 : english.button0 }}
+            </button>
+            <button [routerLink]="'/imprint'">{{ globalJSData.isGerman ? german.button1 : english.button1 }}</button>
+        </div>
+        <span class="font-poppins">&copy; Sebastian Rieder 2024</span>
+        <div class="social-media-contain">
+            <img src="assets/img/icons/github.png" (click)="globalJSData.goTo('https://github.com/SebastianClausRieder')">
+            <img src="assets/img/icons/mail-white.png" (click)="globalJSData.openOutlookEmail('sebastian.rieder@live.com')">
+            <img src="assets/img/icons/facebook-white.png" (click)="globalJSData.goTo('https://www.facebook.com/SebastianClausRieder/')">
+        </div>
+    </div>
+</footer>

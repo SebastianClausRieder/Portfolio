@@ -1,0 +1,277 @@
+@import './../../../mixin.scss';
+
+@media all and (min-width: 1600px) and (max-width: 1799px) {
+
+    nav {
+        div {
+            width: 95%;
+        }
+    }
+}
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+
+    nav {
+        height: 90px;
+
+        div {
+            width: 90%;
+
+            .my-logo {
+                width: 350px;
+            }
+
+            .menu {
+                width: 750px;
+
+                .btn-contain {
+
+                    button {
+                        font-size: 25px;
+                    }
+                }
+
+                .img-contain {
+
+                    img {
+                        width: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-hidden {
+        top: -90px;
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+
+    nav {
+        height: 90px;
+
+        div {
+            width: 90%;
+
+            .my-logo {
+                width: 350px;
+            }
+
+            .menu {
+                width: fit-content;
+
+                .btn-contain {
+                    width: 200px;
+
+                    @include display($fd: column, $ai: flex-start);
+
+                    transform: translateX(100%);
+                    transition: all 325ms ease-in-out;
+                    transition-delay: 0.1s;
+
+                    background-color: var(--darkerBG);
+                    border-bottom-left-radius: 25px;
+                    position: absolute;
+                    top: 90px; right: 0;
+
+                    padding-bottom: 15px;
+
+                    button {
+                        font-size: 25px;
+                        opacity: 0;
+                        transform: translateX(100%);
+                        
+                        margin-left: 15px;
+                    }
+                
+                    &.show-btns {
+                        transform: translateX(0);
+                        
+                        button {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                    }
+                }
+
+                .img-contain {
+                    width: 150px;
+
+                    img {
+                        width: 35px;
+                    }
+
+                    // Burger Button für Responsive ab 1299px
+
+                    .burger-menu {
+                        width: 30px;
+                        height: 20px;
+
+                        @include display();
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-hidden {
+        top: -90px;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+
+    nav {
+        height: 90px;
+
+        div {
+            width: 90%;
+
+            .my-logo {
+                width: 300px;
+            }
+
+            .menu {
+                width: fit-content;
+
+                .btn-contain {
+                    width: 200px;
+
+                    @include display($fd: column, $ai: flex-start);
+
+                    transform: translateX(100%);
+                    transition: all 325ms ease-in-out;
+                    transition-delay: 0.1s;
+
+                    background-color: var(--darkerBG);
+                    border-bottom-left-radius: 25px;
+                    position: absolute;
+                    top: 90px; right: 0;
+
+                    padding-bottom: 10px;
+
+                    button {
+                        font-size: 25px;
+                        opacity: 0;
+                        transform: translateX(100%);
+                        
+                        margin-left: 15px;
+                    }
+                
+                    &.show-btns {
+                        transform: translateX(0);
+                        
+                        button {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                    }
+                }
+
+                .img-contain {
+                    width: 150px;
+
+                    img {
+                        width: 35px;
+                    }
+
+                    // Burger Button für Responsive ab 1299px
+
+                    .burger-menu {
+                        width: 30px;
+                        height: 20px;
+
+                        @include display();
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-hidden {
+        top: -90px;
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+
+    nav {
+        height: 90px;
+
+        div {
+            width: 90%;
+
+            .my-logo {
+                width: 150px;
+            }
+
+            .menu {
+                width: fit-content;
+
+                .btn-contain {
+                    width: 175px;
+
+                    @include display($fd: column, $ai: flex-start);
+
+                    transform: translateX(100%);
+                    transition: all 325ms ease-in-out;
+                    transition-delay: 0.1s;
+
+                    background-color: var(--darkerBG);
+                    border-bottom-left-radius: 25px;
+                    position: absolute;
+                    top: 90px; right: 0;
+
+                    padding-bottom: 10px;
+
+                    button {
+                        font-size: 20px;
+                        opacity: 0;
+                        transform: translateX(100%);
+                        
+                        margin-left: 15px;
+                    }
+                
+                    &.show-btns {
+                        transform: translateX(0);
+                        
+                        button {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                    }
+                }
+
+                .img-contain {
+                    width: 100px;
+
+                    img {
+                        width: 25px;
+                    }
+
+                    // Burger Button für Responsive ab 1299px
+
+                    .burger-menu {
+                        width: 20px;
+                        height: 15px;
+
+                        @include display();
+
+                        &.open .burger-line:nth-child(1) {
+                            top: 6px;
+                        }
+                    
+                        &.open .burger-line:nth-child(3) {
+                            bottom: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-hidden {
+        top: -90px;
+    }
+}

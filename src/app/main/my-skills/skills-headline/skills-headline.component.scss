@@ -1,0 +1,209 @@
+@import './../../../../mixin.scss';
+
+div {
+    width: 100%;
+    height: fit-content;
+
+    @include display($fd: column, $ai: flex-end);
+
+    .headline {
+        width: 100%;
+        height: fit-content;
+
+        @include display($jc: flex-end);
+
+        position: relative;
+
+        h1 {
+            font-size: 110px;
+            font-weight: 900;
+            margin-bottom: 35px;
+            text-align: end;
+        }
+
+        .lower-font-size {
+            font-size: 65px;
+        }
+
+        .line2 {
+            width: 16%;
+            position: absolute;
+            right: -22%;
+
+            border: 3px solid var(--violet2);
+            
+            margin-top: 35px;
+        }
+
+        .margin {
+            margin-top: 15px;
+        }
+    }
+
+    span {
+        width: 100%;
+        height: fit-content;
+
+        font-size: 20px;
+        font-weight: 600;
+        text-align: end;
+    }
+
+    .btn-contian {
+        width: 100%;
+        height: 150px;
+
+        @include display($ai: flex-end);
+
+        button {
+            width: 275px;
+            height: 75px;
+
+            @include display();
+
+            border: 0;
+            border-radius: 15px;
+            background-color: var(--green);
+
+            font-size: 28px;
+            font-weight: 600;
+
+            margin-left: 25%;
+
+            transition: all 125ms ease-in-out;
+
+            &:hover {
+                background-color: var(--violet);
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1600px) and (max-width: 1799px) {
+    div {
+
+        .headline {
+
+            h1 {
+                font-size: 85px;
+            }
+
+            .lower-font-size {
+                font-size: 55px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+    div {
+
+        .headline {
+
+            h1 {
+                font-size: 65px;
+            }
+
+            .lower-font-size {
+                font-size: 50px;
+            }
+
+            .line2 {
+                width: 8%;
+
+                right: -13%;
+                margin-top: 10px;
+            }
+        }
+
+        span {
+            font-size: 18px;
+        }
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+    div {
+
+        .headline {
+
+            h1 {
+                font-size: 95px;
+            }
+
+            .lower-font-size {
+                font-size: 50px;
+            }
+
+            .line2 {
+                width: 8%;
+
+                right: -10%;
+                margin-top: 25px;
+            }
+        }
+
+        .btn-contian {
+            display: none;
+        }
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    div {
+
+        .headline {
+
+            h1 {
+                font-size: 75px;
+            }
+
+            .lower-font-size {
+                font-size: 50px;
+            }
+
+            .line2 {
+                width: 8%;
+
+                right: -10%;
+                margin-top: 25px;
+            }
+        }
+
+        .btn-contian {
+            display: none;
+        }
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+    div {
+
+        .headline {
+
+            h1 {
+                font-size: 45px;
+            }
+
+            .lower-font-size {
+                font-size: 30px;
+            }
+
+            .line2 {
+                width: 8%;
+
+                right: -10%;
+                margin-top: -5px;
+            }
+        }
+
+        span {
+            font-size: 14px;
+        }
+
+        .btn-contian {
+            display: none;
+        }
+    }
+}

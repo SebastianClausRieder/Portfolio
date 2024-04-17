@@ -1,0 +1,39 @@
+<div>
+    <img src="assets/img/background/bogen.png" class="dividing-sheet">
+    <div class="profil-contain">
+        <div class="profil-photo-contain">
+            <img src="assets/img/background/bg-shadow1.png" class="profil-photo-shadow">
+            <img src="assets/img/founder/Portfolio Fotos/my-photo-gimp.png" class="profil-photo">
+        </div>
+        <div class="profil-contain2">
+            <div class="font-poppins profil-text">
+                <div class="rotate-text">
+                    <span class="text1">
+                        {{ globalJSData.isGerman ? german.text1 : english.text1 }}
+                    </span>
+                </div>
+                <div class="text-contain">
+                    <span class="text2">Sebastian Rieder</span>
+                    <span class="text3">Frontend Developer</span>
+                </div>
+            </div>
+            <button class="font-poppins" (click)="globalJSData.scrollToSection('contact')">
+                {{ globalJSData.isGerman ? german.button : english.button }}
+            </button>
+        </div>
+    </div>
+    <div class="parting-line1">
+        <div class="sm-contain">
+            <div class="line1"></div>
+            <div class="social-media-contain">
+                <img src="assets/img/icons/github.png" (click)="globalJSData.goTo('https://github.com/SebastianClausRieder')">
+                <img src="assets/img/icons/mail-white.png" (click)="globalJSData.openOutlookEmail('sebastian.rieder@live.com')">
+                <img src="assets/img/icons/facebook-white.png" (click)="globalJSData.goTo('https://www.facebook.com/SebastianClausRieder/')">
+            </div>
+            <span class="font-poppins mail">sebastian.rieder&#64;live.com</span>
+        </div>
+        <div class="font-poppins scroll-down" (click)="globalJSData.scrollToSection('about')">
+            {{ globalJSData.isGerman ? german.text2 : english.text2 }}<img src="assets/img/icons/down-arrow.png" class="down-arrow">
+        </div>
+    </div>
+</div>

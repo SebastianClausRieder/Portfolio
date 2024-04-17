@@ -1,0 +1,112 @@
+@import './../../../../mixin.scss';
+
+div {
+    width: 100%;
+    height: fit-content;
+
+    @include display();
+    position: relative;
+
+    .line-arround {
+        width: 150px;
+
+        border: 3px solid var(--turquoise);
+    }
+
+    h1 {
+        width: 600px;
+
+        font-size: 110px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .line3 {
+        width: 31%;
+
+        position: absolute;
+        right: -8.8%;
+
+        border: 3px solid var(--turquoise);
+    }
+}
+
+@media all and (min-width: 1600px) and (max-width: 1799px) {
+    div {
+
+        h1 {
+            font-size: 85px;
+        }
+    }
+}
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+    div {
+
+        h1 {
+            width: 400px;
+            font-size: 65px;
+        }
+
+        .line3 {
+            width: 31%;
+            right: -5.5%;
+        }
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+    div {
+
+        h1 {
+            width: 500px;
+            font-size: 95px;
+        }
+
+        .line-arround {
+            width: 75px;
+        }
+
+        .line3 {
+            width: 18%;
+            right: -5%;
+        }
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    div {
+
+        h1 {
+            width: 400px;
+            font-size: 75px;
+        }
+
+        .line-arround {
+            width: 75px;
+        }
+
+        .line3 {
+            width: 20%;
+            right: -5%;
+        }
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+    div {
+
+        h1 {
+            width: fit-content;
+            font-size: 45px;
+        }
+
+        .line-arround {
+            width: 45px;
+        }
+
+        .line3 {
+            display: none;
+        }
+    }
+}

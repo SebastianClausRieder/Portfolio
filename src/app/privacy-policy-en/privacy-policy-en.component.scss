@@ -1,0 +1,43 @@
+@import './../../mixin.scss';
+
+div {
+    width: 100%;
+    height: calc(100vh - 302px);
+
+    @include display($ai: flex-start);
+
+    overflow: hidden;
+    overflow-y: scroll;
+
+    .contain1 {
+        width: 85%;
+        height: fit-content;
+
+        @include display($fd: column, $ai: flex-start);
+    }
+}
+
+h1, h2, h3, li, p, strong, td {
+    font-family: 'Poppins';
+    color: var(--white);
+}
+
+a {
+    font-family: 'Poppins';
+    color: var(--turquoise);
+}
+
+.shadow-r {
+    width: 300px;
+    position: absolute;
+    right: 0; bottom: 25px;
+    z-index: -99;
+}
+
+.shadow-l {
+    width: 250px;
+    position: absolute;
+    left: 0; top: 0px;
+    transform: scaleY(-1);
+    z-index: -99;
+}

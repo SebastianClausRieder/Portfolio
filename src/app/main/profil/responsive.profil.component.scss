@@ -1,0 +1,452 @@
+@import './../../../mixin.scss';
+
+@media all and (min-width: 1600px) and (max-width: 1799px) {
+
+    .profil-contain {
+        width: 95%;
+
+        .profil-photo-contain {
+
+            .profil-photo-shadow {
+                left: -75px;
+            }
+        }
+    }
+
+    .parting-line1 {
+
+        .scroll-down {
+            margin-right: -40px;
+        }
+    }
+}
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+
+    div {
+
+        .dividing-sheet {
+            width: 1700px;
+
+            top: 390px;
+        }
+    }
+
+    .profil-contain {
+        width: 90%;
+        height: 650px;
+
+        .profil-photo-contain {
+            width: 500px;
+            height: 650px;
+
+            .profil-photo-shadow {
+                height: 675px;
+                left: -155px; bottom: -100px;
+            }
+
+            .profil-photo {
+                height: 650px;
+            }
+        }
+    }
+
+    .profil-contain2 {
+
+        margin: inherit;
+
+        .profil-text {
+            width: 665px;
+
+            margin: inherit;
+
+            .rotate-text {
+                
+                .text1 {
+                    font-size: 55px;
+                }
+            }
+
+            .text-contain {
+                width: calc(100% - 125px);
+
+                margin: inherit;
+
+                .text2 {
+                    font-size: 62px;
+                }
+
+                .text3 {
+                    font-size: 55px;
+                }
+            }
+        }
+    }
+
+    .parting-line1 {
+        height: 150px;
+
+        .sm-contain {
+            @include display($gap: 50px);
+
+            .line1 {
+                width: 150px;
+            }
+
+            .social-media-contain {
+                @include display($gap: 50px);
+
+                img {
+                    width: 45px;
+                }
+            }
+
+            .mail {
+                font-size: 30px;
+            }
+        }
+
+        .scroll-down {
+            font-size: 25px;
+            margin-right: -20px;
+        }
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+
+    div {
+        height: 1250px;
+        margin-top: 40px;
+
+        .dividing-sheet {
+            width: 1500px;
+
+            top: 600px;
+        }
+    }
+
+    .profil-contain {
+        width: 90%;
+        height: fit-content;
+
+        @include display($fd: column);
+
+        .profil-photo-contain {
+            width: 855px;
+            height: fit-content;
+
+            .profil-photo-shadow {
+                height: 825px;
+                left: -35px; bottom: -80px;
+            }
+
+            .profil-photo {
+                width: auto;
+                height: 800px;
+            }
+        }
+    }
+
+    .profil-contain2 {
+        width: 100%;
+        height: 275px;
+
+        gap: 25px;
+        margin: inherit;
+
+        .profil-text {
+            width: 800px;
+
+            margin: inherit;
+
+            .text1 {
+                font-size: 65px;
+                margin-top: 25px;
+            }
+
+            .lower-font-size {
+                font-size: 70px;
+            }
+
+            .text-contain {
+                width: calc(100% - 156px);
+
+                margin: inherit;
+
+                .text2 {
+                    font-size: 70px;
+                    margin-top: 5px;
+                }
+
+                .text3 {
+                    font-size: 61px;
+                }
+            }
+        }
+    }
+
+    .parting-line1 {
+        height: 150px;
+        margin-top: 25px;
+
+        .sm-contain {
+            width: 100%;
+            @include display($gap: 75px);
+
+            .line1 {
+                width: 200px;
+
+                position: absolute;
+                left: 0;
+            }
+
+            .social-media-contain {
+                @include display($gap: 75px);
+
+                img {
+                    width: 55px;
+                }
+            }
+
+            .mail {
+                display: none;
+            }
+        }
+
+        .scroll-down {
+            display: none;
+        }
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+
+    div {
+        height: 850px;
+        margin-top: 40px;
+
+        .dividing-sheet {
+            width: 1200px;
+
+            top: 355px;
+        }
+    }
+
+    .profil-contain {
+        width: 90%;
+        height: fit-content;
+
+        @include display($fd: column);
+
+        .profil-photo-contain {
+            width: 555px;
+            height: fit-content;
+
+            .profil-photo-shadow {
+                height: 525px;
+                left: -15px; bottom: -70px;
+            }
+
+            .profil-photo {
+                width: auto;
+                height: 500px;
+            }
+        }
+    }
+
+    .profil-contain2 {
+        width: 100%;
+        height: 275px;
+
+        gap: 25px;
+        margin: inherit;
+
+        .profil-text {
+            width: 530px;
+            height: 125px;
+
+            margin: inherit;
+
+            .rotate-text {
+                
+                .text1 {
+                    width: 105px;
+
+                    font-size: 45px;
+                    margin-top: 5px;
+                }
+            }
+
+            .text-contain {
+                width: calc(100% - 100px);
+
+                row-gap: 5px;
+
+                margin: inherit;
+
+                .text2 {
+                    font-size: 49px;
+                    
+                }
+
+                .text3 {
+                    font-size: 43px;
+                }
+            }
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+
+            font-size: 24px;
+        }
+    }
+
+    .parting-line1 {
+        height: 150px;
+        margin-top: 25px;
+
+        .sm-contain {
+            width: 100%;
+            @include display($gap: 75px);
+
+            .line1 {
+                width: 100px;
+
+                position: absolute;
+                left: 0;
+            }
+
+            .social-media-contain {
+                @include display($gap: 75px);
+
+                img {
+                    width: 55px;
+                }
+            }
+
+            .mail {
+                display: none;
+            }
+        }
+
+        .scroll-down {
+            display: none;
+        }
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+
+    div {
+        height: 575px;
+        margin-top: 40px;
+
+        .dividing-sheet {
+            width: 900px;
+
+            top: 205px;
+        }
+    }
+
+    .profil-contain {
+        width: 90%;
+        height: fit-content;
+
+        @include display($fd: column);
+
+        .profil-photo-contain {
+            width: 255px;
+            height: fit-content;
+
+            .profil-photo-shadow {
+                height: 325px;
+                left: -45px; bottom: -50px;
+            }
+
+            .profil-photo {
+                width: auto;
+                height: 300px;
+            }
+        }
+    }
+
+    .profil-contain2 {
+        width: 100%;
+        height: 275px;
+
+        gap: 25px;
+        margin: inherit;
+
+        .profil-text {
+            width: 265px;
+
+            margin: inherit;
+
+            .rotate-text {
+
+                .text1 {    
+                    font-size: 21px;
+                }
+            }
+
+            .text-contain {
+                width: calc(100% - 47px);
+
+                row-gap: 5px;
+
+                margin: inherit;
+
+                .text2 {
+                    font-size: 25px;
+                }
+
+                .text3 {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+
+            font-size: 19px;
+        }
+    }
+
+    .parting-line1 {
+        height: 100px;
+        margin-top: 0;
+
+        .sm-contain {
+            width: 100%;
+            @include display($gap: 25px);
+
+            .line1 {
+                width: 50px;
+
+                position: absolute;
+                left: 0;
+            }
+
+            .social-media-contain {
+                @include display($gap: 20px);
+
+                img {
+                    width: 35px;
+                }
+            }
+
+            .mail {
+                display: none;
+            }
+        }
+
+        .scroll-down {
+            display: none;
+        }
+    }
+}

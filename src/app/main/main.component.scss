@@ -1,0 +1,76 @@
+@import './../../mixin.scss';
+
+.main {
+    width: 100%;
+    height: fit-content;
+
+    @include display($fd: column);
+}
+
+div {
+    width: 100%;
+    height: fit-content;
+
+    @include display($fd: column);
+    position: relative;
+
+    .shadow {
+        position: absolute;
+        left: 0; top: -350px;
+        z-index: -99;
+    }
+
+    .contain1 {
+        width: 85%;
+        height: 150px;
+
+        @include display($jc: flex-end, $ai: flex-start);
+        position: relative;
+    }
+
+    .btn-contain {
+        width: 50px;
+        height: 50px;
+        
+        @include display();
+        position: relative;
+
+        cursor: url(./../../assets/img/cursor/click.png), auto;
+    }
+    
+    .go-up-btn {
+        width: 50px;
+    }
+    
+    .go-up-btn-tq {
+        width: 50px;
+
+        @include display($d: none);
+        position: absolute;
+        top: 0;
+
+        z-index: 1;
+    }
+    
+    .btn-contain:hover .go-up-btn-tq {
+        @include display($d: inline);
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    div {
+        .shadow {
+            height: 600px;
+            top: -250px;
+        }
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+    div {
+        .shadow {
+            height: 600px;
+            top: -250px;
+        }
+    }
+}

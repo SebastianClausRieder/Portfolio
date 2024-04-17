@@ -1,0 +1,149 @@
+@import './../../../mixin.scss';
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+    footer {
+        height: 250px;
+
+        .main-contain {
+            
+            div {
+                width: 400px;
+
+                .my-logo {
+                    width: 350px;
+                }
+            }
+
+            .logo-contain {
+
+                button {
+                    font-size: 18px;
+                }
+            }
+
+            span {
+                width: 400px;
+
+                font-size: 21px;
+            }
+
+            .social-media-contain {
+                @include display($jc: flex-end, $gap: 55px);
+    
+                img {
+                    width: 45px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+    footer {
+        height: 600px;
+
+        .main-contain {
+            width: 90%;
+            @include display($fd: column, $jc: space-evenly);
+
+            div {
+                height: fit-content;
+            }
+
+            .logo-contain {
+                @include display($fw: wrap, $ai: flex-start);
+                column-gap: 100px;
+
+                .my-logo {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+
+                button {
+                    margin-left: 0;
+                }
+            }
+
+            .social-media-contain {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    footer {
+        height: 450px;
+
+        .main-contain {
+            width: 90%;
+            @include display($fd: column, $jc: space-evenly);
+
+            div {
+                height: fit-content;
+            }
+
+            .logo-contain {
+                @include display($fw: wrap, $ai: flex-start);
+                column-gap: 100px;
+
+                .my-logo {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+
+                button {
+                    margin-left: 0;
+                }
+            }
+
+            .social-media-contain {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+    footer {
+        height: 300px;
+
+        .main-contain {
+            width: 90%;
+            @include display($fd: column, $jc: space-evenly);
+
+            div {
+                width: 275px;
+                height: fit-content;
+            }
+
+            .logo-contain {
+                @include display($fw: wrap, $ai: flex-start);
+                column-gap: 100px;
+
+                .my-logo {
+                    width: 100%;
+                    margin-bottom: 40px;
+                }
+
+                button {
+                    font-size: 14px;
+                    margin-left: 0;
+                }
+            }
+
+            span {
+                width: 100%;
+                font-size: 18px;
+            }
+
+            .social-media-contain {
+                @include display($jc: center, $gap: 35px);
+
+                img {
+                    width: 35px;
+                }
+            }
+        }
+    }
+}

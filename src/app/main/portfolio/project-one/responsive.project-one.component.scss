@@ -1,0 +1,248 @@
+@import './../../../../mixin.scss';
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+    div {
+        margin-top: 50px;
+
+        .contain1 {
+            height: fit-content;
+        }
+    }
+
+    .img-contain {
+        height: fit-content;
+
+        img {
+            width: 400px;
+        }
+    }
+
+    .text-contain {
+        height: fit-content;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        span {
+            font-size: 17px;
+        }
+    }
+
+    .contain2 {
+
+        button {
+            width: 150px;
+            height: 50px;
+
+            font-size: 24px;
+        }
+
+        .btn2 {
+
+            .text-btn2 {
+                font-size: 24px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+    div {
+
+        .contain1 {
+            height: fit-content;
+
+            flex-direction: column;
+        }
+
+        .flex-reverse {
+            flex-direction: column;
+        }
+    }
+
+    .img-contain {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .text-contain {
+        width: 100%;
+        height: fit-content;
+
+        align-items: center;
+
+        h2 {
+            font-size: 56px;
+        }
+
+        p {
+            font-size: 38px;
+        }
+
+        span {
+            font-size: 31px;
+            text-align: center;
+        }
+
+        .text-end {
+            text-align: center;
+        }
+    }
+
+    .contain2 {
+        justify-content: center;
+
+        .btn2 {
+            border: 2px solid var(--violet);
+
+            .text-btn2 {
+                color: var(--white);
+            }
+        }
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    div {
+
+        .contain1 {
+            height: fit-content;
+
+            flex-direction: column;
+        }
+
+        .flex-reverse {
+            flex-direction: column;
+        }
+    }
+
+    .img-contain {
+        width: 100%;
+
+        justify-content: center;
+
+        img {
+            width: 450px;
+        }
+    }
+
+    .text-contain {
+        width: 100%;
+        height: fit-content;
+
+        align-items: center;
+
+        margin: 0;
+
+        h2 {
+            font-size: 56px;
+        }
+
+        p {
+            font-size: 32px;
+        }
+
+        span {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .text-end {
+            text-align: center;
+        }
+    }
+
+    .contain2 {
+        @include display($jc: center, $gap: 50px);
+
+        .btn2 {
+            border: 2px solid var(--violet);
+
+            .text-btn2 {
+                color: var(--white);
+            }
+        }
+    }
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+    div {
+        margin-top: 25px;
+
+        .contain1 {
+            height: fit-content;
+
+            flex-direction: column;
+        }
+
+        .flex-reverse {
+            flex-direction: column;
+        }
+    }
+
+    .img-contain {
+        width: 100%;
+        height: 200px;
+
+        justify-content: center;
+
+        img {
+            width: 250px;
+        }
+    }
+
+    .text-contain {
+        width: 100%;
+        height: fit-content;
+
+        align-items: center;
+
+        margin: 0;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .text-end {
+            text-align: center;
+        }
+    }
+
+    .contain2 {
+        @include display($jc: center, $gap: 15px);
+
+        button {
+            width: 120px;
+            height: 45px;
+
+            font-size: 18px;
+        }    
+
+        .btn2 {
+            border: 2px solid var(--violet);
+
+            .text-btn2 {
+                font-size: 18px;
+                color: var(--white);
+
+                margin-top: 12px;
+            }
+        }
+    }
+}

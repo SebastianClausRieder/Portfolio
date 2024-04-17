@@ -1,0 +1,91 @@
+@import './../../../mixin.scss';
+
+div {
+    width: 100%;
+    height: fit-content;
+
+    @include display($fd: column);
+    position: relative;
+
+    margin-top: 75px;
+    margin-bottom: 100px;
+
+    .main {
+        width: 85%;
+        height: fit-content;
+
+        @include display();
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: 600;
+
+        margin-top: -50px;
+    }
+}
+
+@media all and (min-width: 1600px) and (max-width: 1799px) {
+    div {
+
+        .main {
+            width: 95%;
+        }
+    }    
+}
+
+@media all and (min-width: 1300px) and (max-width: 1599px) {
+    div {
+
+        .main {
+            width: 90%;
+        }
+
+        span {
+            font-size: 18px;
+        }
+    }    
+}
+
+@media all and (min-width: 900px) and (max-width: 1299px) {
+    div {
+
+        .main {
+            width: 90%;
+        }
+    } 
+}
+
+@media all and (min-width: 600px) and (max-width: 899px) {
+    div {
+
+        .main {
+            width: 90%;
+        }
+
+        span {
+            width: 90%;
+            
+            font-size: 18px;
+            text-align: center;
+        }
+    } 
+}
+
+@media all and (min-width: 300px) and (max-width: 599px) {
+    div {
+
+        .main {
+            width: 90%;
+        }
+
+        span {
+            width: 90%;
+            
+            font-size: 14px;
+            text-align: center;
+
+            margin-top: -25px;
+        }
+    } 
+}

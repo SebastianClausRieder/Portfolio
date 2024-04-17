@@ -1,0 +1,132 @@
+@import './../../../mixin.scss';
+
+div {
+    width: 100%;
+    height: fit-content;
+
+    @include display($fd: column);
+    position: relative;
+
+    margin-top: 100px;
+
+    .shadow {
+        height: 1000px;
+
+        position: absolute;
+        right: 0; top: -550px;
+        z-index: -99;
+    }
+
+    .headline {
+        width: 85%;
+        height: fit-content;
+
+        @include display($jc: flex-start);
+
+        margin-top: 0;
+        
+        .line4 {
+            width: 5%;
+    
+            position: absolute;
+            left: -8.5%;
+    
+            border: 3px solid var(--green);
+
+            margin-top: -75px;
+        }
+    
+        h1 {
+            font-size: 110px;
+            font-weight: 900;
+
+            margin-top: 0;
+        }
+    }
+
+    .contain1 {
+        width: 85%;
+        height: 700px;
+
+        @include display($ai: flex-start);
+
+        margin: 0;
+
+        .app-contain {
+            width: 50%;
+            height: fit-content;
+
+            @include display($fd: column, $ai: flex-start, $gap: 25px);
+        }
+    }
+
+    .dialog {
+        height: auto;
+
+        @include display();
+        position: fixed;
+        left: 1px; right: 1px; top: 1px; bottom: 1px;
+
+        background-color: var(--black50);
+
+        margin: 0;
+        z-index: 999;
+
+        .dialog-contain1 {
+            width: 500px;
+            height: 600px;
+
+            @include display($fd: column, $gap: 25px);
+
+            background-color: var(--lighterBG);
+            border-radius: 15px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+            .text-contain {
+                
+                margin: 0;
+                margin-bottom: 25px;
+
+                span {
+                    font-size: 18px;
+                }
+            }
+
+            button {
+                width: 225px;
+                height: 65px;
+    
+                @include display();
+    
+                border: 0;
+                border-radius: 15px;
+                background-color: var(--green);
+    
+                font-size: 32px;
+                font-weight: 600;
+    
+                transition: all 125ms ease-in-out;
+    
+                &:hover {
+                    background-color: var(--violet);
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .redBorder {
+            border: 4px solid var(--red);
+        }
+        
+        .greenBorder {
+            border: 4px solid var(--green);
+        }
+    }
+
+    .d-none {
+        display: none;
+    }
+}
