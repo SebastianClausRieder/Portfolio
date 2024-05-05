@@ -2,12 +2,11 @@
 
 div {
     width: 100%;
-    height: calc(100vh - 302px);
+    height: fit-content;
 
     @include display($ai: flex-start);
 
-    overflow: hidden;
-    overflow-y: scroll;
+    margin-top: 110px;
 
     .contain1 {
         width: 85%;
@@ -15,6 +14,7 @@ div {
 
         @include display($fd: column, $ai: flex-start);
 
+        margin-top: 0;
         margin-bottom: 25px;
 
         .contain2 {
@@ -23,16 +23,22 @@ div {
     
             @include display($jc: flex-start, $gap: 10px);
 
+            margin-top: 0;
+       
             .contain3 {
                 width: 100px;
                 height: 25px;
-                @include display($jc: flex-end)
+                @include display($jc: flex-end);
+                
+                margin-top: 0;
             }
 
             .contain4 {
                 width: 150px;
                 height: 25px;
-                @include display($jc: flex-start)
+                @include display($jc: flex-start);
+
+                margin-top: 0;
             }
 
             span {

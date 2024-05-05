@@ -2,12 +2,14 @@ import { Component, inject } from '@angular/core';
 import { GlobalJSService } from '../../global-js.service';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss', 'responsive.header.component.scss']
@@ -40,14 +42,18 @@ export class HeaderComponent {
     button0: 'Top',
     button1: 'About me',
     button2: 'Skills',
-    button3: "Contact"
+    button3: 'Contact',
+    button4: 'Top',
+    button5: 'go Back'
   }
 
   german: any = {
     button0: 'Beginn',
     button1: 'Über mich',
     button2: 'Expertise',
-    button3: 'Kontakt'
+    button3: 'Kontakt',
+    button4: 'Beginn',
+    button5: 'Zurück'
   }
 
   makeElementVisibleOnScroll(): void {
@@ -66,8 +72,10 @@ export class HeaderComponent {
       
       if (currentScroll > this.lastScrollTop) {
         document.getElementById("navbar")?.classList.add("navbar-hidden");
+        document.getElementById("smallNavbar")?.classList.add("navbar-hidden");
       } else {
         document.getElementById("navbar")?.classList.remove("navbar-hidden");
+        document.getElementById("smallNavbar")?.classList.remove("navbar-hidden");
       }
 
       this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;

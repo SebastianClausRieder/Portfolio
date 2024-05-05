@@ -37,6 +37,7 @@ form {
 
             font-size: 21px;
             font-weight: 600;
+            caret-color: var(--green);
 
             outline: none;
 
@@ -57,6 +58,7 @@ form {
 
             font-size: 21px;
             font-weight: 600;
+            caret-color: var(--green);
 
             outline: none;
             resize: none;
@@ -158,6 +160,8 @@ form {
         font-size: 28px;
         font-weight: 600;
 
+        cursor: url(./../../../../assets/img/cursor/mouse.png), auto;
+
         margin-left: 25%;
     }
 
@@ -180,6 +184,7 @@ form {
     }
     
     .ready-bg {
+        cursor: url(./../../../../assets/img/cursor/click.png), auto;
         background-color: var(--turquoise);
         transition: all 125ms ease-in-out;
 

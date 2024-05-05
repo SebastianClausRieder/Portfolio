@@ -25,15 +25,15 @@ div {
 
     .shadow {
         position: absolute;
-        right: 0; bottom: 25px;
+        right: -624px; bottom: 25px;
         z-index: -99;
     }
 
     .line {
-        width: 325px;
+        width: 1350px;
 
         position: absolute;
-        right: 0;
+        left: 1600px;
 
         border: 4px solid var(--turquoise2);
         margin: 0;
@@ -44,9 +44,10 @@ div {
 @media all and (min-width: 1600px) and (max-width: 1799px) {
     
     div {
+        width: 90%;
 
         .text {
-            width: 55%;
+            width: 60%;
         }
 
         .photo {
@@ -55,6 +56,8 @@ div {
 
         .line {
             width: 200px;
+            left: inherit;
+            right: -115px;
         }
     }
 }
@@ -80,7 +83,9 @@ div {
         }
 
         .line {
-            width: 180px;
+            width: 175px;
+            left: inherit;
+            right: 0px;
         }
     }
 }

@@ -3,8 +3,10 @@
 @media all and (min-width: 1600px) and (max-width: 1799px) {
 
     nav {
-        div {
-            width: 95%;
+        .master-contain {
+            div {
+                width: 90%;
+            }
         }
     }
 }
@@ -14,28 +16,34 @@
     nav {
         height: 90px;
 
-        div {
-            width: 90%;
-
-            .my-logo {
-                width: 350px;
-            }
-
-            .menu {
-                width: 750px;
-
-                .btn-contain {
-
-                    button {
-                        font-size: 25px;
+        .master-contain {
+            div {
+                width: 90%;
+    
+                .my-logo {
+                    width: 350px;
+                }
+    
+                .menu {
+                    width: 750px;
+    
+                    .btn-contain {
+    
+                        button {
+                            font-size: 25px;
+                        }
+                    }
+    
+                    .img-contain {
+    
+                        img {
+                            width: 35px;
+                        }
                     }
                 }
-
-                .img-contain {
-
-                    img {
-                        width: 35px;
-                    }
+    
+                .smallmenu {
+                    width: 225px;
                 }
             }
         }
@@ -51,64 +59,97 @@
     nav {
         height: 90px;
 
-        div {
-            width: 90%;
-
-            .my-logo {
-                width: 350px;
-            }
-
-            .menu {
-                width: fit-content;
-
-                .btn-contain {
-                    width: 200px;
-
-                    @include display($fd: column, $ai: flex-start);
-
-                    transform: translateX(100%);
-                    transition: all 325ms ease-in-out;
-                    transition-delay: 0.1s;
-
-                    background-color: var(--darkerBG);
-                    border-bottom-left-radius: 25px;
-                    position: absolute;
-                    top: 90px; right: 0;
-
-                    padding-bottom: 15px;
-
-                    button {
-                        font-size: 25px;
-                        opacity: 0;
+        .master-contain {
+            
+            div {
+                width: 90%;
+    
+                .my-logo {
+                    width: 350px;
+                }
+    
+                .menu {
+                    width: fit-content;
+    
+                    .btn-contain {
+                        width: 200px;
+    
+                        @include display($fd: column, $ai: flex-start);
+    
                         transform: translateX(100%);
-                        
-                        margin-left: 15px;
-                    }
-                
-                    &.show-btns {
-                        transform: translateX(0);
-                        
+                        transition: all 325ms ease-in-out;
+                        transition-delay: 0.1s;
+    
+                        background-color: var(--darkerBG);
+                        border-bottom-left-radius: 25px;
+                        position: absolute;
+                        top: 90px; right: 0;
+    
+                        padding-bottom: 15px;
+    
                         button {
-                            opacity: 1;
+    
+                            font-size: 25px;
+    
+                            opacity: 0;
+                            transform: translateX(100%);
+                            
+                            margin-left: 15px;
+                        }
+                    
+                        &.show-btns {
                             transform: translateX(0);
+                            
+                            button {
+                                opacity: 1;
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+    
+                    .img-contain {
+                        width: 150px;
+    
+                        img {
+                            width: 35px;
+    
+                            &:hover {
+                                transform: rotate(-15deg);
+                            }
+                        }
+    
+                        // Burger Button für Responsive ab 1299px
+    
+                        .burger-menu {
+                            width: 30px;
+                            height: 20px;
+    
+                            @include display();
                         }
                     }
                 }
-
-                .img-contain {
-                    width: 150px;
-
-                    img {
-                        width: 35px;
-                    }
-
-                    // Burger Button für Responsive ab 1299px
-
-                    .burger-menu {
-                        width: 30px;
-                        height: 20px;
-
+    
+                .smallmenu {
+                    width: 225px;
+    
+                    #btnContain {
+                        width: 100%;
+    
                         @include display();
+    
+                        transform: translateX(0);
+    
+                        position: static;
+    
+                        #button {
+    
+                            font-size: 25px;
+    
+                            opacity: 1;
+                            transform: translateX(0);
+                            
+                            margin-left: 15px;
+                        }
                     }
                 }
             }
@@ -125,64 +166,94 @@
     nav {
         height: 90px;
 
-        div {
-            width: 90%;
-
-            .my-logo {
-                width: 300px;
-            }
-
-            .menu {
-                width: fit-content;
-
-                .btn-contain {
-                    width: 200px;
-
-                    @include display($fd: column, $ai: flex-start);
-
-                    transform: translateX(100%);
-                    transition: all 325ms ease-in-out;
-                    transition-delay: 0.1s;
-
-                    background-color: var(--darkerBG);
-                    border-bottom-left-radius: 25px;
-                    position: absolute;
-                    top: 90px; right: 0;
-
-                    padding-bottom: 10px;
-
-                    button {
-                        font-size: 25px;
-                        opacity: 0;
+        .master-contain {
+            div {
+                width: 90%;
+    
+                .my-logo {
+                    width: 300px;
+                }
+    
+                .menu {
+                    width: fit-content;
+    
+                    .btn-contain {
+                        width: 200px;
+    
+                        @include display($fd: column, $ai: flex-start);
+    
                         transform: translateX(100%);
-                        
-                        margin-left: 15px;
-                    }
-                
-                    &.show-btns {
-                        transform: translateX(0);
-                        
+                        transition: all 325ms ease-in-out;
+                        transition-delay: 0.1s;
+    
+                        background-color: var(--darkerBG);
+                        border-bottom-left-radius: 25px;
+                        position: absolute;
+                        top: 90px; right: 0;
+    
+                        padding-bottom: 10px;
+    
                         button {
-                            opacity: 1;
+                            font-size: 25px;
+                            opacity: 0;
+                            transform: translateX(100%);
+                            
+                            margin-left: 15px;
+                        }
+                    
+                        &.show-btns {
                             transform: translateX(0);
+                            
+                            button {
+                                opacity: 1;
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+    
+                    .img-contain {
+                        width: 150px;
+    
+                        img {
+                            width: 35px;
+    
+                            &:hover {
+                                transform: rotate(-15deg);
+                            }
+                        }
+    
+                        // Burger Button für Responsive ab 1299px
+    
+                        .burger-menu {
+                            width: 30px;
+                            height: 20px;
+    
+                            @include display();
                         }
                     }
                 }
-
-                .img-contain {
-                    width: 150px;
-
-                    img {
-                        width: 35px;
-                    }
-
-                    // Burger Button für Responsive ab 1299px
-
-                    .burger-menu {
-                        width: 30px;
-                        height: 20px;
-
+    
+                .smallmenu {
+                    width: 225px;
+    
+                    #btnContain {
+                        width: 100%;
+    
                         @include display();
+    
+                        transform: translateX(0);
+    
+                        position: static;
+    
+                        #button {
+    
+                            font-size: 25px;
+    
+                            opacity: 1;
+                            transform: translateX(0);
+                            
+                            margin-left: 15px;
+                        }
                     }
                 }
             }
@@ -199,71 +270,102 @@
     nav {
         height: 90px;
 
-        div {
-            width: 90%;
+        .master-contain {
 
-            .my-logo {
-                width: 150px;
-            }
-
-            .menu {
-                width: fit-content;
-
-                .btn-contain {
-                    width: 175px;
-
-                    @include display($fd: column, $ai: flex-start);
-
-                    transform: translateX(100%);
-                    transition: all 325ms ease-in-out;
-                    transition-delay: 0.1s;
-
-                    background-color: var(--darkerBG);
-                    border-bottom-left-radius: 25px;
-                    position: absolute;
-                    top: 90px; right: 0;
-
-                    padding-bottom: 10px;
-
-                    button {
-                        font-size: 20px;
-                        opacity: 0;
+            div {
+                width: 90%;
+    
+                .my-logo {
+                    width: 150px;
+                }
+    
+                .menu {
+                    width: fit-content;
+    
+                    .btn-contain {
+                        width: 175px;
+    
+                        @include display($fd: column, $ai: flex-start);
+    
                         transform: translateX(100%);
-                        
-                        margin-left: 15px;
-                    }
-                
-                    &.show-btns {
-                        transform: translateX(0);
-                        
+                        transition: all 325ms ease-in-out;
+                        transition-delay: 0.1s;
+    
+                        background-color: var(--darkerBG);
+                        border-bottom-left-radius: 25px;
+                        position: absolute;
+                        top: 90px; right: 0;
+    
+                        padding-bottom: 10px;
+    
                         button {
-                            opacity: 1;
+                            font-size: 20px;
+                            opacity: 0;
+                            transform: translateX(100%);
+                            
+                            margin-left: 15px;
+                        }
+                    
+                        &.show-btns {
                             transform: translateX(0);
+                            
+                            button {
+                                opacity: 1;
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+    
+                    .img-contain {
+                        width: 100px;
+    
+                        img {
+                            width: 25px;
+    
+                            &:hover {
+                                transform: rotate(-15deg);
+                            }
+                        }
+    
+                        // Burger Button für Responsive ab 1299px
+    
+                        .burger-menu {
+                            width: 20px;
+                            height: 15px;
+    
+                            @include display();
+    
+                            &.open .burger-line:nth-child(1) {
+                                top: 6px;
+                            }
+                        
+                            &.open .burger-line:nth-child(3) {
+                                bottom: 6px;
+                            }
                         }
                     }
                 }
-
-                .img-contain {
-                    width: 100px;
-
-                    img {
-                        width: 25px;
-                    }
-
-                    // Burger Button für Responsive ab 1299px
-
-                    .burger-menu {
-                        width: 20px;
-                        height: 15px;
-
-                        @include display();
-
-                        &.open .burger-line:nth-child(1) {
-                            top: 6px;
-                        }
-                    
-                        &.open .burger-line:nth-child(3) {
-                            bottom: 6px;
+    
+                .smallmenu {
+                    width: 225px;
+    
+                    #btnContain {
+                        width: 100%;
+    
+                        @include display($fd: column);
+    
+                        transform: translateX(0);
+    
+                        position: static;
+    
+                        #button {
+    
+                            font-size: 15px;
+    
+                            opacity: 1;
+                            transform: translateX(0);
+                            
+                            margin-left: 15px;
                         }
                     }
                 }

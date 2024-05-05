@@ -4,7 +4,8 @@ import { GlobalJSService } from '../global-js.service';
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [],
+  imports: [
+  ],
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })
@@ -50,5 +51,9 @@ export class ImprintComponent {
       headline: "Quellen",
       z1: "Icons erstellt von"
     }
+  }
+
+  ngOnInit(): void {
+    window.scrollTo({ top: 0 });
   }
 }

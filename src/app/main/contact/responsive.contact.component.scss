@@ -2,9 +2,17 @@
 
 @media all and (min-width: 1600px) and (max-width: 1799px) {
     div {
+        width: 90%;
 
         .headline {
-            width: 95%;
+            width: 100%;
+
+            .line4 {
+                width: 250px;
+                right: inherit;
+                left: -275px;
+                margin-top: -60px;
+            }
 
             h1 {
                 font-size: 85px;
@@ -12,7 +20,7 @@
         }
 
         .contain1 {
-            width: 95%;
+            width: 100%;
         }
     }   
 }
@@ -24,6 +32,9 @@
             width: 90%;
 
             .line4 {
+                width: 250px;
+                right: inherit;
+                left: -275px;
                 margin-top: -45px;
             }
 
@@ -45,7 +56,9 @@
             width: 90%;
 
             .line4 {
-                left: -7%;
+                width: 250px;
+                right: inherit;
+                left: -275px;
                 margin-top: -60px;
             }
 
@@ -82,7 +95,9 @@
             width: 90%;
 
             .line4 {
-                left: -7%;
+                width: 250px;
+                right: inherit;
+                left: -275px;
                 margin-top: -50px;
             }
 
@@ -119,8 +134,12 @@
             width: 90%;
 
             .line4 {
-                left: -7%;
+                width: 250px;
+                right: inherit;
+                left: -265px;
                 margin-top: -30px;
+                
+                border: 2px solid var(--green);
             }
 
             h1 {
@@ -146,6 +165,18 @@
             .dialog-contain1 {
                 width: 275px;
                 height: 350px;
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                .text-contain {
+
+                    span {
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
 
                 button {
                     width: 150px;

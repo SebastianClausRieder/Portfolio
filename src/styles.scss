@@ -3,17 +3,20 @@
 body {
     width: calc(100vw - 8px);
     background-color: var(--darkerBG);
+
+    @include display();
     
     margin: 0;
-    scroll-behavior: smooth;
 
     cursor: url(./assets/img/cursor/mouse.png), auto;
 }
 
-.site-wrapper {
+.side-wrapper {
     width: 100%;
-    overflow-x: hidden;
+
     position: relative;
+
+    overflow: hidden;
 }
 
 button, a {
@@ -80,6 +83,12 @@ button, a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     box-shadow: 0px 0.2px 5px 2px var(--violet2);
+}
+
+@media all and (min-width: 300px) and (max-width: 1299px) {
+    body {
+        width: 100vw;
+    }
 }
 
 // Font Poppins

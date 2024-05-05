@@ -17,7 +17,7 @@
                     <span class="text3">Frontend Developer</span>
                 </div>
             </div>
-            <button class="font-poppins" (click)="globalJSData.scrollToSection('contact')">
+            <button class="font-poppins" (click)="globalJSData.scrollToContact()">
                 {{ globalJSData.isGerman ? german.button : english.button }}
             </button>
         </div>
@@ -32,7 +32,7 @@
             </div>
             <span class="font-poppins mail">sebastian.rieder&#64;live.com</span>
         </div>
-        <div class="font-poppins scroll-down" (click)="globalJSData.scrollToSection('about')">
+        <div class="font-poppins scroll-down" (click)="globalJSData.scrollToContact()">
             {{ globalJSData.isGerman ? german.text2 : english.text2 }}<img src="assets/img/icons/down-arrow.png" class="down-arrow">
         </div>
     </div>

@@ -2,49 +2,17 @@
 
 div {
     width: 100%;
-    height: calc(100vh - 302px);
+    height: fit-content;
 
     @include display($ai: flex-start);
-    
-    scroll-behavior: smooth;
 
-    overflow: hidden;
-    overflow-y: scroll;
+    margin-top: 110px;
 
     .contain1 {
         width: 85%;
         height: fit-content;
 
         @include display($fd: column, $ai: flex-start);
-    }
-
-    .btn-contain {
-        width: 60px;
-        height: 60px;
-        
-        @include display();
-        position: fixed;
-        top: 50px; right: 50px;
-
-        cursor: pointer;
-    }
-    
-    .go-up-btn {
-        width: 50px;
-    }
-    
-    .go-up-btn-tq {
-        width: 50px;
-
-        @include display($d: none);
-        position: absolute;
-        top: 5px;
-
-        z-index: 1;
-    }
-    
-    .btn-contain:hover .go-up-btn-tq {
-        @include display($d: inline);
     }
 }
 

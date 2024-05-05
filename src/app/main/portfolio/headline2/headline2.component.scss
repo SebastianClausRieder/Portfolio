@@ -22,10 +22,10 @@ div {
     }
 
     .line3 {
-        width: 31%;
+        width: 1675px;
 
         position: absolute;
-        right: -8.8%;
+        left: 1200px;
 
         border: 3px solid var(--turquoise);
     }
@@ -36,6 +36,11 @@ div {
 
         h1 {
             font-size: 85px;
+        }
+
+        .line3 {
+            width: 575px;
+            left: 1150px;
         }
     }
 }
@@ -49,8 +54,8 @@ div {
         }
 
         .line3 {
-            width: 31%;
-            right: -5.5%;
+            width: 600px;
+            left: 925px;
         }
     }
 }
@@ -64,12 +69,13 @@ div {
         }
 
         .line-arround {
-            width: 75px;
+            width: 125px;
         }
 
         .line3 {
-            width: 18%;
-            right: -5%;
+            width: 23%;
+            left: inherit;
+            right: -6%;
         }
     }
 }
@@ -87,7 +93,8 @@ div {
         }
 
         .line3 {
-            width: 20%;
+            width: 19.5%;
+            left: inherit;
             right: -5%;
         }
     }
@@ -97,12 +104,14 @@ div {
     div {
 
         h1 {
-            width: fit-content;
+            width: 225px;
             font-size: 45px;
         }
 
         .line-arround {
-            width: 45px;
+            width: 20px;
+
+            border: 2px solid var(--turquoise);
         }
 
         .line3 {

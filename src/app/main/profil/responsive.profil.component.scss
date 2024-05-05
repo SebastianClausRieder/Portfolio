@@ -3,20 +3,13 @@
 @media all and (min-width: 1600px) and (max-width: 1799px) {
 
     .profil-contain {
-        width: 95%;
+        width: 90%;
 
         .profil-photo-contain {
 
             .profil-photo-shadow {
-                left: -75px;
+                left: -100px;
             }
-        }
-    }
-
-    .parting-line1 {
-
-        .scroll-down {
-            margin-right: -40px;
         }
     }
 }
@@ -90,11 +83,13 @@
             @include display($gap: 50px);
 
             .line1 {
-                width: 150px;
+                width: 175px;
+                right: 720px;
             }
 
             .social-media-contain {
                 @include display($gap: 50px);
+                margin-left: 100px;
 
                 img {
                     width: 45px;
@@ -117,6 +112,8 @@
 
     div {
         height: 1250px;
+        max-height: none;
+
         margin-top: 40px;
 
         .dividing-sheet {
@@ -195,14 +192,14 @@
             @include display($gap: 75px);
 
             .line1 {
-                width: 200px;
-
-                position: absolute;
-                left: 0;
+                width: 275px;
+                right: inherit;
+                left: -125px;
             }
 
             .social-media-contain {
                 @include display($gap: 75px);
+                margin-left: 0;
 
                 img {
                     width: 55px;
@@ -224,6 +221,8 @@
 
     div {
         height: 850px;
+        max-height: none;
+
         margin-top: 40px;
 
         .dividing-sheet {
@@ -297,8 +296,8 @@
         }
 
         button {
-            width: 200px;
-            height: 50px;
+            width: 225px;
+            height: 65px;
 
             font-size: 24px;
         }
@@ -314,13 +313,12 @@
 
             .line1 {
                 width: 100px;
-
-                position: absolute;
-                left: 0;
+                left: -75px;
             }
 
             .social-media-contain {
                 @include display($gap: 75px);
+                margin-left: 0;
 
                 img {
                     width: 55px;
@@ -342,6 +340,8 @@
 
     div {
         height: 575px;
+        max-height: none;
+        
         margin-top: 40px;
 
         .dividing-sheet {
@@ -410,8 +410,8 @@
         }
 
         button {
-            width: 150px;
-            height: 40px;
+            width: 200px;
+            height: 60px;
 
             font-size: 19px;
         }
@@ -426,14 +426,15 @@
             @include display($gap: 25px);
 
             .line1 {
-                width: 50px;
+                width: 100px;
+                left: -75px;
 
-                position: absolute;
-                left: 0;
+                border: 2px solid var(--green);
             }
 
             .social-media-contain {
                 @include display($gap: 20px);
+                margin-left: 0;
 
                 img {
                     width: 35px;

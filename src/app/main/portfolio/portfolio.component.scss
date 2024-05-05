@@ -27,9 +27,10 @@ div {
 
 @media all and (min-width: 1600px) and (max-width: 1799px) {
     div {
-
+        width: 90%;
+        
         .main {
-            width: 95%;
+            width: 100%;
         }
     }    
 }

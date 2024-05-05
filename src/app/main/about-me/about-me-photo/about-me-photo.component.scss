@@ -11,7 +11,7 @@
     width: 100%;
     height: fit-content;
 
-    @include display($jc: flex-start);
+    @include display();
 
     .circle {
         width: 650px;

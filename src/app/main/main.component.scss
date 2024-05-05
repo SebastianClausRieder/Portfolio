@@ -2,6 +2,7 @@
 
 .main {
     width: 100%;
+    max-width: 1920px;
     height: fit-content;
 
     @include display($fd: column);
@@ -16,12 +17,13 @@ div {
 
     .shadow {
         position: absolute;
-        left: 0; top: -350px;
+        left: -650px; top: -300px;
         z-index: -99;
     }
 
     .contain1 {
         width: 85%;
+        max-width: 1630px;
         height: 150px;
 
         @include display($jc: flex-end, $ai: flex-start);

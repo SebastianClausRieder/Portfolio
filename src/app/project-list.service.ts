@@ -33,7 +33,7 @@ export class ProjectListService {
       descriptionEN: 'An insight into a narrow selection of my projects.',
       descriptionDE: 'Der einblick in eine enge Auswahl meiner Projekte.',
       liveLink: 'https://rieder-sebastian.de/',
-      githubLink: ''
+      githubLink: 'https://github.com/SebastianClausRieder/Portfolio'
     }
   ]
 }

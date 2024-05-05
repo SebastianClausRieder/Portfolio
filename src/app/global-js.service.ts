@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { HostListener, Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 
 @Injectable({
@@ -7,18 +7,17 @@ import { Observable, Subject } from 'rxjs';
 export class GlobalJSService {
 
   isGerman: boolean = false;
+  mainPageOpen: boolean = true;
   windowWidth: number;
+  
+  storedValueLanguage: string | null = localStorage.getItem('isGerman');
+  storedValueMainPage: string | null = localStorage.getItem('mainPage');
 
   private toggleMenuSubject = new Subject<void>();
   toggleMenu$: Observable<void> = this.toggleMenuSubject.asObservable(); 
 
   constructor() {
-    
-    const storedValue: string | null = localStorage.getItem('isGerman');
-    if (storedValue !== null) {
-      this.isGerman = JSON.parse(storedValue);
-    }
-
+    this.loadLocalStorage();
     this.windowWidth = window.innerWidth;
   }
 
@@ -30,6 +29,22 @@ export class GlobalJSService {
     this.isGerman = language;
     
     localStorage.setItem('isGerman', JSON.stringify(language));
+  }
+
+  mainPage(page: boolean) {
+    this.mainPageOpen = page;
+    
+    localStorage.setItem('mainPage', JSON.stringify(page));
+  }
+
+  loadLocalStorage() {
+    if (this.storedValueLanguage !== null) {
+      this.isGerman = JSON.parse(this.storedValueLanguage);
+    }
+
+    if (this.storedValueMainPage !== null) {
+      this.mainPageOpen = JSON.parse(this.storedValueMainPage);
+    }
   }
 
   scrollToSection(level: string): void {
@@ -65,8 +80,20 @@ export class GlobalJSService {
     }
   }
 
+  scrollToContact() {
+    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  scrollToStart() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   openOutlookEmail(emailAddress: string): void {
     const mailtoLink = `mailto:${emailAddress}`;
     window.open(mailtoLink);
+  }
+
+  ngOnInit(): void {
+    window.scrollTo({ top: 0 });
   }
 }

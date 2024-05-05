@@ -26,9 +26,9 @@ div {
         }
 
         .line2 {
-            width: 16%;
+            width: 1150px;
             position: absolute;
-            right: -22%;
+            left: 700px;
 
             border: 3px solid var(--violet2);
             
@@ -92,6 +92,12 @@ div {
             .lower-font-size {
                 font-size: 55px;
             }
+
+            .line2 {
+                width: 250px;
+                left: inherit;
+                right: -285px;
+            }
         }
     }
 }
@@ -110,9 +116,9 @@ div {
             }
 
             .line2 {
-                width: 8%;
-
-                right: -13%;
+                width: 150px;
+                left: inherit;
+                right: -185px;
                 margin-top: 10px;
             }
         }
@@ -137,9 +143,9 @@ div {
             }
 
             .line2 {
-                width: 8%;
-
-                right: -10%;
+                width: 150px;
+                left: inherit;
+                right: -175px;
                 margin-top: 25px;
             }
         }
@@ -164,9 +170,9 @@ div {
             }
 
             .line2 {
-                width: 8%;
-
-                right: -10%;
+                width: 150px;
+                left: inherit;
+                right: -168px;
                 margin-top: 25px;
             }
         }
@@ -191,9 +197,12 @@ div {
             }
 
             .line2 {
-                width: 8%;
+                width: 150px;
+                left: inherit;
+                right: -165px;
 
-                right: -10%;
+                border: 2px solid var(--violet2);
+
                 margin-top: -5px;
             }
         }
