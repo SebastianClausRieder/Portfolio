@@ -17,6 +17,7 @@ export class GlobalJSService {
   toggleMenu$: Observable<void> = this.toggleMenuSubject.asObservable(); 
 
   constructor() {
+    this.mainPage(true);
     this.loadLocalStorage();
     this.windowWidth = window.innerWidth;
   }
