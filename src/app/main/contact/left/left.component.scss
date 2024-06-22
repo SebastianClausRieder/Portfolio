@@ -10,17 +10,6 @@ span {
     font-weight: 200;
 }
 
-div {
-    width: 100%;
-    height: fit-content;
-
-    @include display($jc: flex-start, $gap: 5px);
-
-    .contact-me {
-        font-weight: 900;
-    }
-}
-
 @media all and (min-width: 1300px) and (max-width: 1599px) {
     h2 {
         font-size: 24px;
@@ -48,9 +37,5 @@ div {
 
     span {
         font-size: 12px;
-    }
-
-    div {
-        @include display($fd: column, $ai: flex-start);
     }
 }

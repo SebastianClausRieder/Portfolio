@@ -6,9 +6,13 @@
     </div>
     <div class="contain2">
         <span class="font-poppins text">
-            {{ globalJSData.isGerman ? german.aboutMe.z1 : english.aboutMe.z1 }}<br>
-            {{ globalJSData.isGerman ? german.aboutMe.z2 : english.aboutMe.z2 }}<br>
-            {{ globalJSData.isGerman ? german.aboutMe.z3 : english.aboutMe.z3 }}
+            @if (globalJSData.isGerman) {
+                Ich bin Sebastian Rieder, geboren 1986 in Wien. Ich begann meine berufliche Laufbahn in der Gastronomie, wo ich als gelernter Koch und Restaurantfachmann tätig war, zuletzt in leitender Position. 
+                Seit Juni 2022 lebe ich in Dippoldiswalde, Sachsen, und arbeite als Beikoch. Parallel dazu absolviere ich seit Jannuar 2023 ein Bootcamp der Developer Akademie, um meine Programmierfähigkeiten zu verbessern.
+            } @else {
+                I am Sebastian Rieder, born in Vienna in 1986. I began my professional career in the gastronomy, where I worked as a trained chef and restaurant specialist, most recently in a managerial position.
+                I have been living in Dippoldiswalde, Sachsen, since June 2022 and working as an assistant chef. At the same time, I have been completing an advanced training by the Developer Akademie since January 2023 to improve my programming skills.
+            }
         </span>
     </div>
     <div class="contain2">
@@ -17,11 +21,15 @@
         </div>
         <div class="contain3">
             <span class="font-poppins text">
-                {{ globalJSData.isGerman ? german.myWay.z1 : english.myWay.z1 }}<br>
-                {{ globalJSData.isGerman ? german.myWay.z2 : english.myWay.z2 }}<br>
-                {{ globalJSData.isGerman ? german.myWay.z3 : english.myWay.z3 }}<br>
-                {{ globalJSData.isGerman ? german.myWay.z4 : english.myWay.z4 }}<br>
-                {{ globalJSData.isGerman ? german.myWay.z5 : english.myWay.z5 }}
+                @if (globalJSData.isGerman) {
+                    Früh entdeckte ich meine Leidenschaft für Technik, inspiriert durch meinen Vater, der als Drucker arbeitete. 
+                    Obwohl ich mich zunächst für ein Studium als Programmierer interessierte, führte mich mein Bildungsweg zunächst in die Gastronomie. 
+                    Dort lernte ich nicht nur die Feinheiten des Gastgewerbes kennen, sondern auch meine Lebensgefährtin, mit der ich seit fast einem Jahrzehnt zusammenlebe.
+                } @else {
+                    I discovered my passion for technology early on, inspired by my father, who worked as a printer.
+                    Although I was initially interested in studying as a programmer, my educational path initially led me to the gastronomy.
+                    There I not only got to know the intricacies of the hospitality industry, but also my partner, with whom I have lived for almost a decade.
+                }
             </span>
         </div>
     </div>
@@ -31,10 +39,13 @@
         </div>
         <div class="contain3">
             <span class="font-poppins text">
-                {{ globalJSData.isGerman ? german.thoughts.z1 : english.thoughts.z1 }}<br>
-                {{ globalJSData.isGerman ? german.thoughts.z2 : english.thoughts.z2 }}<br>
-                {{ globalJSData.isGerman ? german.thoughts.z3 : english.thoughts.z3 }}<br>
-                {{ globalJSData.isGerman ? german.thoughts.z4 : english.thoughts.z4 }}
+                @if (globalJSData.isGerman) {
+                    Die Programmierung verkörpert grenzenlose Freiheit, während sich die Horizonte unserer Vorstellungskraft ausdehnen. 
+                    Es ist die Kunstformung unserer technologischen Zukunft, sei es durch Innovation, Spielzeug für Kinder oder autonome Fahrsysteme.
+                } @else {
+                    Programming embodies boundless freedom as the horizons of our imagination expand. 
+                    It is the art shaping our technological future, whether through innovation, children's toys, or autonomous driving systems.
+                }
             </span>
         </div>
     </div>

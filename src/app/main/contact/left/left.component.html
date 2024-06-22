@@ -1,9 +1,19 @@
-<h2 class="font-poppins">{{ globalJSData.isGerman ? german.ask : english.ask }}</h2>
+<h2 class="font-poppins">
+    {{ globalJSData.isGerman ? german.ask : english.ask }}
+</h2>
 <span class="font-poppins">
-    {{ globalJSData.isGerman ? german.text1.z1 : english.text1.z1 }}<br>
-    {{ globalJSData.isGerman ? german.text1.z2 : english.text1.z2 }}
+    @if (globalJSData.isGerman) {
+        Kontaktieren Sie mich über dieses Formular. Ich würde mich freuen, von Ihnen zu hören
+        und mehr über Ihre Ideen zu erfahren, um diese mit meinen Fähigkeiten tatkräftig zu unterstützen.
+    } @else {
+        Contact me using this form. I would be happy to hear from you
+        and learn more about your ideas in order to actively support them with my skills.
+    }
 </span>
-<div>
-    <span class="font-poppins">{{ globalJSData.isGerman ? german.text2 : english.text2 }}</span>
-    <span class="font-poppins contact-me">{{ globalJSData.isGerman ? german.text3 : english.text3 }}</span>
-</div>
+<span class="font-poppins">
+    @if (globalJSData.isGerman) {
+        Suchen Sie einen Frontend Developer? <strong>Kontaktieren Sie mich!</strong>
+    } @else {
+        Are you looking for a Frontend Developer? <strong>Contact Me!</strong>
+    }
+</span>

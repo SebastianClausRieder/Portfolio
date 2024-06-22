@@ -22,4 +22,7 @@ import { GlobalJSService } from '../global-js.service';
 export class MainComponent {
   globalJSData = inject(GlobalJSService);
 
+  ngAfterViewInit(): void {
+    this.globalJSData.mainPage(true);
+  }
 }

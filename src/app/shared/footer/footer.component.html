@@ -3,10 +3,10 @@
         <div class="main-contain">
             <div class="logo-contain">
                 <img src="assets/img/founder/name-logo.png" class="my-logo">
-                <button [routerLink]="globalJSData.isGerman ? '/datenschutzrichtlinien' : '/privacyPolicy'" (click)="globalJSData.mainPage(false)">
+                <button [routerLink]="globalJSData.isGerman ? '/datenschutzrichtlinien' : '/privacyPolicy'">
                     {{ globalJSData.isGerman ? german.button0 : english.button0 }}
                 </button>
-                <button [routerLink]="'/imprint'" (click)="globalJSData.mainPage(false)">
+                <button [routerLink]="'/imprint'">
                     {{ globalJSData.isGerman ? german.button1 : english.button1 }}
                 </button>
             </div>

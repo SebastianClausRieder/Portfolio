@@ -81,6 +81,10 @@ export class GlobalJSService {
     }
   }
 
+  scrollDown() {
+    document.querySelector('#aboutMe')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   scrollToContact() {
     document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
   }

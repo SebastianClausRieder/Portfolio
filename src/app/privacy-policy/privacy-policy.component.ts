@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { GlobalJSService } from '../global-js.service';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -9,6 +10,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./privacy-policy.component.scss']
 })
 export class PrivacyPolicyComponent {
+  
+  globalJSData = inject(GlobalJSService);
 
   scrollToTop() {
     const container = document.getElementById('top');
@@ -19,5 +22,9 @@ export class PrivacyPolicyComponent {
 
   ngOnInit(): void {
     window.scrollTo({ top: 0 });
+  }
+
+  ngAfterViewInit(): void {
+    this.globalJSData.mainPage(false);
   }
 }

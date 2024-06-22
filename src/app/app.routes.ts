@@ -8,5 +8,5 @@ export const routes: Routes = [
     { path: '', component: MainComponent },
     { path: 'imprint', component: ImprintComponent },
     { path: 'datenschutzrichtlinien', component: PrivacyPolicyComponent },
-    { path: 'privacyPolicy', component: PrivacyPolicyENComponent }
+    { path: 'privacyPolicy', component: PrivacyPolicyENComponent },
 ];

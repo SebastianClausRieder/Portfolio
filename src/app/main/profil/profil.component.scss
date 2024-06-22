@@ -2,13 +2,10 @@
 
 div {
     width: 100%;
-    height: calc(100vh - 110px);
     max-height: 1000px;
 
     @include display($fd: column, $jc: flex-start);
     position: relative;
-
-    margin-top: 110px;
 
     .dividing-sheet {
         width: 4000px;
@@ -18,6 +15,10 @@ div {
 
         z-index: -998;
     }
+}
+
+.main-contain {
+    min-height: calc(100vh - 110px);
 }
 
 .profil-contain {

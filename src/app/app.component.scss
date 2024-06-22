@@ -1,6 +1,10 @@
 @import './../mixin.scss';
 
-.main, .app-contain, .footer  {
+.header, .app-contain, .footer  {
     @include display();
     position: relative;
+}
+
+.header {
+    height: 110px;
 }

@@ -63,7 +63,7 @@ export class RightComponent {
     request2: 'Ihre E-Mail ist erforderlich.',
     request3: 'Bitte schildern Sie mir Ihr Anliegen.',
     request4: 'Bitte stimmen Sie den Datenschutzrichtlinien zu.',
-    button: 'Nachricht Senden'
+    button: 'Nachricht senden'
   }
 
   constructor() {

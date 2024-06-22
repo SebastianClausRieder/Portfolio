@@ -24,9 +24,14 @@
         margin-bottom: 0;
     }
 
-    .text {
-        font-size: 20px;
-        margin-bottom: 25px;
+    .contain3 {
+        width: 650px;
+        @include display();    
+
+        .text {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
     }
 }
 
@@ -67,8 +72,11 @@
             font-size: 75px;
         }
 
-        .text {
-            font-size: 17px;
+        .contain3 {
+
+            .text {
+                font-size: 17px;
+            }
         }
     }
 }
@@ -89,10 +97,13 @@
         h1 {
             font-size: 75px;
         }
-    
-        .text {
-            font-size: 14px;
-            margin-bottom: 25px;
+
+        .contain3 {
+            width: 500px;
+            .text {
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
         }
     }
     
@@ -129,16 +140,17 @@
             font-size: 45px;
             text-align: center;
         }
-    
-        .text {
-            font-size: 14px;
-            text-align: center;
-
-            margin-bottom: 25px;
-        }
 
         .contain3 {
+            width: 95%;
             @include display();
+    
+            .text {
+                font-size: 14px;
+                text-align: center;
+    
+                margin-bottom: 25px;
+            }
         }
     }
     

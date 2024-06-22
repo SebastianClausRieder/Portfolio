@@ -31,7 +31,7 @@ export class ProjectListService {
       name: 'Portfolio',
       writtenWith: 'Angular | Type Script | HTML | CSS',
       descriptionEN: 'An insight into a narrow selection of my projects.',
-      descriptionDE: 'Der einblick in eine enge Auswahl meiner Projekte.',
+      descriptionDE: 'Der Einblick in eine enge Auswahl meiner Projekte.',
       liveLink: 'https://rieder-sebastian.de/',
       githubLink: 'https://github.com/SebastianClausRieder/Portfolio'
     }

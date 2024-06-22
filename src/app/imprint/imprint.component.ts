@@ -56,4 +56,8 @@ export class ImprintComponent {
   ngOnInit(): void {
     window.scrollTo({ top: 0 });
   }
+
+  ngAfterViewInit(): void {
+    this.globalJSData.mainPage(false);
+  }
 }
